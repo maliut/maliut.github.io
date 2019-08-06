@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <!--<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">-->
+    
+    <title>第三方收发微信消息主流技术小结 | Mの综合研究</title>
+    <link href="https://cdn.bootcss.com/normalize/8.0.0/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+    <body>
+      
+<header role="banner" id="site-banner" class="unselectable center ">
+    
+        <a id="site-logo" href="/"><span class="site-logo-large">Mの</span><br /><span>综合研究</span></a>
+    
+    <nav role="navigation" id="site-nav">
+        <ul>
+        
+            <li><a href="/categories/proj" class="intent3"><i class="icon-folder"></i>&nbsp;项目</a></li>
+        
+            <li><a href="/categories/tech" class=""><i class="icon-cog"></i>&nbsp;技术</a></li>
+        
+            <li><a href="/categories/life" class=""><i class="icon-heart"></i>&nbsp;生活</a></li>
+        
+            <li><a href="/idea" class=""><i class="icon-hangouts"></i>&nbsp;想法</a></li>
+        
+            <li><a href="/about" class=""><i class="icon-user"></i>&nbsp;关于</a></li>
+              
+        </ul>
+    </nav>
+</header>
+      <main role="main" class="center">
+        
+<article class="post">
+    <h1 class="">第三方收发微信消息主流技术小结</h1>
+    <time class="">2019/03/03</time>
+    <section><p>一篇水文。最近因为需要去了解了一下如何通过第三方技术收发微信的消息，以至于实现一些更复杂的功能。由于微信实际上并没有开放这方面的 API ，所以通俗来讲，就是研究了下如何破解微信的体系。</p>
+<a id="more"></a>
+<p>大体的思路也比较好理解，就是通过微信的各个端入手来模拟。主流的做法大概有以下几种：</p>
+<h2 id="Android-端-Hook"><a href="#Android-端-Hook" class="headerlink" title="Android 端 Hook"></a>Android 端 Hook</h2><p>原理： Android 中有著名的 Xposed 框架，可以 Hook 任何 App 的方法，在调用前后插入自己的逻辑。</p>
+<p>对于收发微信消息来说，收消息相对比较简单，因为可以通过 Hook 数据库插入的方法来实现。而微信的数据库使用 wcdb ，表结构为了稳定也不会轻易变化。也就是说，只要能找到数据库插入的操作，稳定的 Hook 方式便可以一直存在。但是 Hook 发消息就没那么容易了。发消息是一组复杂的方法调用，当涉及到消息类型为图片、语音等复杂类型时还会更为复杂。找到发消息的方法已经是难事了，更何况混淆过后的代码还和天书一样，没有十足的耐心根本找不到线索。更甚，混淆后的方法名每个版本都不一样，可能你辛辛苦苦破解了一个版本，到了下一个版本，哪怕源码做了一丁点改动，你也要花费很大的工作量去适配。</p>
+<p>从市面上来看，使用 Xposed 破解微信的主要用途还是在于消息防撤回和一些 UI 上的定制化，对于发消息的需求并不算多。另一方面，针对发消息的 Hook 开源代码也比较少，且不太成熟，有些人在兜售成熟的解决方案，尚不知道是否有用。尝试了一些开源代码以后，我找到个 <a href="https://github.com/Blankeer/WechatBotXposed" target="_blank" rel="noopener">WechatBotXposed</a>（基于微信 6.6.6 版本） 还是比较靠谱的。</p>
+<p>由于使用 Xposed 需要 Root 手机比较麻烦，这里也提供了一个尝试代价小的方案可供试玩：</p>
+<ol>
+<li>手机安装 <a href="https://vxposed.com/" target="_blank" rel="noopener">VirtualXposed</a> 。</li>
+<li>VirtualXposed 安装微信 6.6.6 版本（旧版本的微信可以通过豌豆荚安装，这不是广告）</li>
+<li>VirtualXposed 安装上述插件</li>
+<li>启用插件并重启 VirtualXposed </li>
+</ol>
+<p><img src="https://wx4.sinaimg.cn/mw690/65381e00gy1g0rvir3ybdg20dc0qe4fo.gif" alt="Demo"></p>
+<p>如果想进一步开发，也可以看<a href="https://blankeer.github.io/2018/05/09/%E5%88%A9%E7%94%A8-Xposed-%E5%BF%AB%E9%80%9F%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E7%AE%80%E6%98%93%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA/" target="_blank" rel="noopener">这篇讲 WechatBotXposed 的思路的文章</a>，学习如何反编译分析微信的方法。</p>
+<p>不过，对于这种破解方式，微信的打击还是比较厉害的。去年年中微信封禁了一波使用 Xposed 的帐号，据称是为了打击世界杯赌球。根据网上能看到的传闻，微信可能会读取手机中已安装应用的列表，判断手机是否被 Root 、是否安装了 Xposed 应用。也有一种方式是判断方法的调用栈中是否存在 Xposed 相关。当然，微信也存在一套行为分析的系统，会通过你登录频次、消息发送频次、设备信息等因素，判断帐号是否存在异常行为。</p>
+<p>个人认为，对于这种方式，微信还是比较容易判断出来的。收消息暂且不论，对于发消息，本来是需要用户手动点击发送按钮，而现在一定会有某个函数触发了发消息的逻辑，一定能通过调用栈判断出来。事实上，我用这种方式玩了两天以后，微信就限制了我的帐号在低版本上的登录，必须让我在新版本上才能登录了。</p>
+<h2 id="使用-Android-上的辅助功能"><a href="#使用-Android-上的辅助功能" class="headerlink" title="使用 Android 上的辅助功能"></a>使用 Android 上的辅助功能</h2><p>原理： Android 上的辅助功能，原本是给残障人士所使用，帮助他们更好地使用手机上的功能。但我们也可以利用这些功能来做到辅助读屏、模拟点击的功能。</p>
+<p>获取屏幕上的控件或点击对应的按钮，需要我们知道界面元素的资源 ID ，所幸这并不需要什么高超的破解技巧，只要使用旧版的 DDMS 对手机界面进行 Dump 就可以了。虽然每次微信升级后，由于混淆的原因，资源 ID 会发生变化，但重新适配的成本也比 Xposed 方案低的多。再退一步讲，即使不知道界面元素的资源 ID ，也可以通过按钮的文字等来区分，这样就完全不需要破解或 Dump 之类的工作了。</p>
+<p>辅助功能的适用场景正好和 Xposed 方案相反。对于发消息，它的实现非常容易，只要你能找到正确的发送对象，接下来输入框和发送按钮都是固定的，直接模拟点击即可。在 Github 上也可以找到<a href="https://github.com/Clearlee/AutoSendWeChatMsg" target="_blank" rel="noopener">现成的实现</a>。但如何判断收消息就困难了不少，因为你很难去监测收到消息这一不是我们主动触发的行为。在网上找到了两种不同的思路，其一是<a href="https://blog.csdn.net/u014651216/article/details/52525009" target="_blank" rel="noopener">通过监测通知栏的变动</a>，其二是<a href="https://www.cnblogs.com/cxk1995/p/6366273.html" target="_blank" rel="noopener">通过监测聊天界面的改变</a>。但两种方式的缺陷也很明显，前者通知栏的推送并不稳定，同时多条通知处理起来也比较麻烦；后者则必须停留在某人的聊天界面中才能监测到。</p>
+<p>也正是因为这样的特点，使用辅助功能的玩法一般用于实现各类微信群发助手。群发助手天然符合它的长处：一方面只管发消息，不管收消息；另一方面，对于所有人发送消息，也避免了判断发送对象是否正确的烦恼。</p>
+<p>这种玩法最大的优势在于完全合法，无需考虑被微信打击的因素。但缺点也很明显，模拟点击的原理使得你不得不为操作加上一些延迟，一些从代码层面来看很简单的操作（比如获取微信号 etc）也需要绕很大的圈子才能做到。同时它受外界影响极大，一旦手机出现些不可预知的卡顿，或其他界面弹出，或同时交流的人数过多，界面变化频繁时，自动执行的操作就会被打断，甚至产生消息发错对象的尴尬。这使它注定只能作为玩具，而无法成为大规模商业化的应用。</p>
+<h2 id="使用微信网页版-API"><a href="#使用微信网页版-API" class="headerlink" title="使用微信网页版 API"></a>使用微信网页版 API</h2><p>原理： Web 即意味着不设防，相比于其他客户端， Web 永远是防御力最薄弱的那个。另外 Web 并不是微信的主打方向，因此迭代速度较慢，版本适配难度也较低。只要破解了 Web API ，就可以模拟登录网页版微信收发消息了。</p>
+<p>这个方法实在没有什么好说的，原理简单粗暴，以前的 Web QQ 也遭遇过这样的毒手。现在基于 Web 微信的机器人程序已经形成了一个庞大而成熟的开源社区，有着完善而优雅的 RESTful API 、命令行工具等。</p>
+<p><a href="https://github.com/chatie/wechaty" target="_blank" rel="noopener"><img src="https://camo.githubusercontent.com/f310a2097d4aa79d6db2962fa42bb3bb2f6d43df/68747470733a2f2f6368617469652e696f2f776563686174792f696d616765732f776563686174792d6c6f676f2d656e2e706e67" alt="Wechaty"></a></p>
+<p>相比前面两种方法，我认为这种做法是目前最成熟且具有可行性的。虽然这也属于破解的范畴，但是由于 Web 端的特定使然，微信并不能做出什么很有针对性的防御。不过微信并非没有采取措施。正如 Web QQ 现在已经被废弃一样，微信也一刀切地禁止了所有新注册帐号的 Web 端登录权限，坊间也一直有微信会取消 Web 版的传言。但即使微信不会取消 Web 版，光是新注册帐号无法登录这一举措，就使得这一方法未来的潜力大打折扣，沦为部分爱折腾的存量用户的玩具。另外，微信的风控体系，也会对那些明显超出频次调用接口的帐号进行临时的封禁，以阻止用户的为所欲为。</p>
+<p>除了以上提到的几点， Web 版本身的功能也是有限的。除了简单的收发消息，进阶的功能比如收发红包、朋友圈等并没有相关的 API ，对于野心更大的开发者来说是个局限。另外，由于 Web 端走 HTTP 协议，对于收发消息的稳定性会比 Native 端略低。</p>
+<h2 id="其他途径"><a href="#其他途径" class="headerlink" title="其他途径"></a>其他途径</h2><p>上述提到的三种是目前的主流技术，但可以看到都有比较大的局限性，因此也有不少人在探索新的解决方案，例如基于 iPad 版和 PC 版的破解。当然，也曾见到技术实力较高的团队，通过自行定制 Android ROM 的方式，提供软硬件一体的解决方案，对微信做大规模的 Hack 。不过以上方案在网上都鲜有公开的资料流出，一方面是为了低调防打击，另一方面也是将其作为商业化的手段。</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>作为普通用户的我们难以想象基于微信这一看似封闭的 App 衍生出了多大的产业链。朋友圈的微商、公众号，还有现在的小程序和小游戏，已经完全可以支撑起一个像样的创业团队。也因此，对微信的破解成了一件十分有利可图的事，吸引了不少人前仆后继。对于时长脑洞大开的开发者如我，自然希望微信可以像 Telegram 那样开放出更多的 API ，以便把更多创意落到实处，但也理解关系链之于微信的重要性，明白这几乎就是天方夜谭。只是，对于那些把身家性命放在微信破解上的公司和开发者，就好像空中楼阁，被微信反手就能玩死，也未免太可悲了。</p>
+</section>
+    <section class="">
+        <small>
+        TAGS:&nbsp;
+        </small>
+    </section>
+</article>
+
+    <div id="vcomments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.7.3/av-min.js"></script>
+    <script src="/Valine.min.js"></script>
+    <script type="text/javascript">
+        new Valine({
+            el: '#vcomments',
+            notify: true,
+            verify: false,
+            app_id: "KNr19IGaxOxhyEPC2OXwmlbK-gzGzoHsz",
+            app_key: "6FKxDyP2jMSYNYCKbk71eevC",
+            placeholder: "Say something...",
+            avatar: 'retro',
+            submail_appid: "13112",
+            submail_appkey: "e66bb0bad3a54056d660664b3f044ff5",
+            submail_template: "e1BUq2",
+            post_title: "第三方收发微信消息主流技术小结"
+        });
+    </script>
+
+      </main>
+    </body>
+    <footer role="contentinfo" class="center">
+    <div id="site-links">
+        <a href="/archives"><i class="icon-database" style="font-size: 15px"></i></a>
+        <a href="mailto:lqn619@163.com" target="_blank" rel="external"><i class="icon-at"></i></a>
+        <a href="https://github.com/maliut" target="_blank" rel="external"><i class="icon-github"></i></a>
+        <a href="https://weibo.com/maliut" target="_blank" rel="external"><i class="icon-sina-weibo"></i></a>
+        <a href="https://steamcommunity.com/id/maliut" target="_blank" rel="external"><i class="icon-steam"></i></a>
+    </div>
+    <p id="copyright">2019&nbsp;&copy;&nbsp;<a href="/">Mの综合研究</a>&nbsp;|&nbsp;Theme <a href="https://github.com/maliut/hexo-theme-simpow" title="SimPow" target="_blank" rel="noopener">SimPow</a></p>
+</footer>
+<script>
+    console.log('Welcome!\nTheme SimPow inspired by Typescript & orzfly.com');
+</script>
+</html>

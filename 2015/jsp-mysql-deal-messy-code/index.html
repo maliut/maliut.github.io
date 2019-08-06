@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <!--<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">-->
+    
+    <title>解决 JSP 与 MySQL 下各种中文乱码问题 | Mの综合研究</title>
+    <link href="https://cdn.bootcss.com/normalize/8.0.0/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+    <body>
+      
+<header role="banner" id="site-banner" class="unselectable center ">
+    
+        <a id="site-logo" href="/"><span class="site-logo-large">Mの</span><br /><span>综合研究</span></a>
+    
+    <nav role="navigation" id="site-nav">
+        <ul>
+        
+            <li><a href="/categories/proj" class="intent3"><i class="icon-folder"></i>&nbsp;项目</a></li>
+        
+            <li><a href="/categories/tech" class=""><i class="icon-cog"></i>&nbsp;技术</a></li>
+        
+            <li><a href="/categories/life" class=""><i class="icon-heart"></i>&nbsp;生活</a></li>
+        
+            <li><a href="/idea" class=""><i class="icon-hangouts"></i>&nbsp;想法</a></li>
+        
+            <li><a href="/about" class=""><i class="icon-user"></i>&nbsp;关于</a></li>
+              
+        </ul>
+    </nav>
+</header>
+      <main role="main" class="center">
+        
+<article class="post">
+    <h1 class="">解决 JSP 与 MySQL 下各种中文乱码问题</h1>
+    <time class="">2015/05/22</time>
+    <section><p>近来 Web 课需要处理 JSP、MySQL 前台后台各种，不可避免地遇到了乱码问题。经过无数折腾以后终于（算是）解决，遂将经验总结如下：</p>
+<blockquote>
+<p>本文记录了解决过程。想看结论及解决方案可以直接拉到最后。</p>
+</blockquote>
+<a id="more"></a>
+<p>Lab7 中已经遇到了连接数据库乱码的问题，当时的情况是：</p>
+<p>MySQL 默认安装的编码是 Latin1（ISO8859-1）<br>Eclipse 默认编码是 GBK ，后改为 UTF-8</p>
+<p>当时的现象：<br>MySQL 使用 UTF-8 建的数据库</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DEFAULT CHARACTER <span class="keyword">SET</span> utf8 <span class="keyword">COLLATE</span> utf8_general_ci</span><br></pre></td></tr></table></figure>
+<p>在命令行中可以正常输入中文并在命令行中显示，但是从 Java 中读取而且从 Java 中插入数据库的中文会乱码。</p>
+<p>当时的解决方法：<br>读取时：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">String sql = <span class="string">"SELECT * FROM user"</span>;</span><br><span class="line">Statement stm = connection.createStatement();</span><br><span class="line">ResultSet rs = stm.executeQuery(sql);</span><br><span class="line"><span class="keyword">while</span> (rs.next()) &#123;</span><br><span class="line">    String isbn = rs.getString(<span class="string">"Name"</span>);</span><br><span class="line">    String bookName = rs.getString(<span class="string">"Username"</span>);</span><br><span class="line">    bookName = <span class="keyword">new</span> String(bookName.getBytes(<span class="string">"iso8859-1"</span>), <span class="string">"gbk"</span>);</span><br><span class="line">    System.out.println(bookName + <span class="string">":"</span> + isbn);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>写入时：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">String sql = String.format(<span class="string">"INSERT INTO ISBN_LIST (ISBN, BOOK_NAME) VALUES ('%s' , '%s');"</span>, isbn, bookName);</span><br><span class="line">sql = <span class="keyword">new</span> String(sql.getBytes(<span class="string">"gbk"</span>), <span class="string">"iso8859-1"</span>);</span><br><span class="line">Statement stm = connection.createStatement();</span><br><span class="line"><span class="keyword">int</span> row = stm.executeUpdate(sql);</span><br><span class="line">System.out.println(<span class="string">"ok,"</span> + row + <span class="string">"row(s) affected"</span>);</span><br></pre></td></tr></table></figure>
+<p><strong>为什么要转字符而且和 UTF-8 完全无关？不明！</strong><br>（ PS ：后来了解到 MySQL 变量因此转 ISO8859-1 应该是这方面的原因，但是 GBK 为什么有仍然不明）</p>
+<p>后来的探索：<br>因写 Lab 时中文是从 Eclipse 中打进去的，而 Project 的中文是从表单中用户输入获得的，上文的方法依旧导致乱码。<br>（ PS ：后来意识到中文从前台传到后台还没写入数据库就已经乱码，因此如果再转一次可能可以解决，但已经没办法回去试了，而且这样也不是长久之计，因为 MySQL 本身设置有问题）</p>
+<p>网上查询各种方法未果。<br>因为数据库建成时已经指定了 UTF-8 ，因此网上说的临时改字符集的方法都是没有用的。<br>网上某处看到 <code>show variables like &#39;character_set_%&#39;;</code><br>查看 MySQL 的环境变量，发现除了指定了 database 是 UTF-8 ，其他有好多 Latin1 ，通过 <code>SET character_set_database = utf8;</code> 之类的方法全改成 UTF-8 并若干次重开 MySQL 服务（伴随删除数据表再新建）后发现重启 MySQL 后仍然还原成默认设置。也通过修改 my.ini 尝试过，但是仍有两项为 Latin1<br>这时候我认为把所有的改成 UTF-8 可以解决问题，因此在这种思路下在网上找到了真正的永久修改的方法：在 MySQL 安装目录下 bin 下找到 MYSQLInstanceConfig.exe 重新配置安装选项，在选择编码时选择 UTF-8 ，这样成功将所有环境变量变成 UTF-8 。（ PS ：这样也解决了 mysqldump 导出后中文乱码的问题）</p>
+<p>然而仍然不成功，而且发现这时候在命令行下也无法输入中文的值了。因为之前也看到过命令行的默认编码是 GBK ，会影响中文的显示（但是试过改成 UTF-8 结果出了一堆窗口上的变化导致不敢乱试而且觉得并不是主要），因此使用 <code>SET NAMES &#39;GBK&#39;</code> ，这样可以在命令行显示中文了，但在命令行看并没有什么用，最终还是要解决 JSP 下获取的问题.</p>
+<p>寄希望于能在 JSP 下正常得到，新建了一个 servlet 用来在网页中输出当前数据库的各条记录，使用本文开头 Lab 里所用的转换编码的方法多次尝试，但发现一点用处没有。这使我将目光转向生成 SQL 语句时的编码。生成 SQL 语句后同样按照本文开头 Lab 中的方法对其自身转换编码，虽然回回得到的还是乱码，但是乱码的形式在改变，证明这里可以起作用，或许只要找到正确的转换即可解决。这个时候我注意到之前插的一句调试语句：输出从前台得到的 name 的值，如果从前台得到的就是乱码，那么插进去肯定还是乱码（我也真是迟钝明明之前已经放了这个语句然而写完居然忘记了又去试验别的方法）<br>发现果然这个值得到的时候就已经是乱码了，观察乱码的形式感觉像是西欧文字，因此将转换的语句写为</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sql = <span class="keyword">new</span> String(sql.getBytes(<span class="string">"iso8859-1"</span>), <span class="string">"utf8"</span>);</span><br></pre></td></tr></table></figure>
+<p>果然可以正常显示中文了，我认为至此得到了使用上的解决<br>以前因为网页啊 Eclipse 啊都是 UTF-8 因此前一个编码认为应该是 UTF-8 ，但是后面不管怎么试都没用。这样确定了前面是西欧文字后，因为 MySQL 等都被我改成了 UTF-8 ，后面自然就觉得是 UTF-8<br><strong>但是，为什么从前台得到的中文是西欧文字，并不知道</strong></p>
+<p>另：此时重开 MySQL 命令行，因为没有设置 <code>SET NAMES ‘GBK’</code> ，所以在 MySQL 中显示中文变了乱码，但是既然 JSP 得到是正常了，我认为命令行中 <code>SET NAMES ‘GBK’</code> ，或者把命令行编码改成 UTF-8 应该能显示正常。<br>（ PS: 的确如此）</p>
+<p>// 一天过去了 5.22<br>昨天只解决了 name 字段的中文乱码问题，而 name 字段只是一个普通的字段。今天当测试 username 字段为中文时出现了其他的问题。<br>username 字段需要用在登录页面中进行 SQL 查询，而且需要保存在 cookie 中<br>首先登录时使用中文名字果然无法登录，提示用户名或密码错误，结合昨天的经验容易想到在登录验证的 SQL 查询语句后增加</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sql = <span class="keyword">new</span> String(sql.getBytes(<span class="string">"iso8859-1"</span>), <span class="string">"utf8"</span>);</span><br></pre></td></tr></table></figure>
+<p>然而并没有什么用（事实上是可以的，只是 Eclipse 的默认浏览器出了问题）</p>
+<p>又想到使用 Ajax 进行实时检测时也要进行 SQL 查询，试验后发现对于中文名字重复无法正常提示用户名已被占用，怀疑是编码的问题但是无论怎么改都没用，而后调试输出发现并没有什么问题，最后去掉了改编码的代码，在 chrome 下可以正常提示，网上的说法是 Ajax 是默认用 UTF-8 传值的，看来这个问题已经得到了解决<br>PS：此时 Eclipse 默认浏览器还是错误的。这个浏览器真是害人不浅，浪费了我大量时间，现在已经把运行的默认浏览器改成了 chrome <del>，只不过无法通过 <code>system.out.println</code> 方便调试了</del>（更正：可以调试）。<br>知道了 Eclipse 浏览器的问题，换用 chrome ，登录问题也可以得到解决.</p>
+<p>此外我还探索了为什么前台后台传值使用 ISO8859-1 的问题，网上有说法说要改 Tomcat 的 server.xml 文件。我在安装目录和 Eclipse 的 project explorer 下的 Tomcat 都做了修改然而并没有什么用。或许是我没改对吧。不过更多的地方说更改这个文件并不是什么好方法，因为实际情况下有时不能改变服务器配置。因此作罢。</p>
+<p>随后是 cookie 存中文的问题，存中文会报错说有控制字符。这其实是一个小问题了，查阅网上资料后得知只要 <code>URLEncoder.encode(username, &quot;UTF-8&quot;)</code> 即可，这时候中文变成  <code>%C3%A5%C2%95%C2%8A%C3%A5%C2%95%C2%8A%C3%A5%C2%95%C2%8A</code> 这样的形式，可以正常存储了，但是在读取时却出了问题。<br>首先是 JS 读取 cookies 问题，用于在主页显示当前登录用户的用户名。然而用 JS 读出来并解码后发现还是乱码，西欧字符。经过检查， JS 读取 cookies 的内容是没问题的，就是之前存入的 cookies 的内容，这样问题就很明显了。因为从前台到后台得到的中文本来就是西欧字符，为了方便起见我在构成 SQL 查询字符串后进行了转码，这样不用单独对每一个得到的有可能是中文的前台表单元素在后台获得时就挨个进行转码。但是这样的话在存进 cookies 时所用来编码的 username 仍然是西欧字符的 username 。<br>因此，在保存 cookies 时先将 username 转码再 encode 存储即可。<br>注意： JS 解码时应使用 <code>decodeURI</code> 函数而不是 <code>unescape</code> 函数，后者仍然使用西欧编码解码。<br>注意：这样 SQL 和 cookie 处都有需要解码的地方，感觉看起来略杂乱，觉得还是不能偷懒，在获得前台表单值时就应立即转码。</p>
+<p>接下来是 servlet(JSP) 读取 cookies 问题，用于访问主页时根据 cookies 中是否有值判断应跳转至主页还是登录页面。既然前面已经将 cookies 正确储存了，这里就没什么问题了，直接在得到 cookies 以后 <code>URLDecoder.decode(cUsername,&quot;UTF-8&quot;)</code> 即可。<br>注意：这里的 SQL 查询构建 SQL 语句后就不用从西欧转到 UTF-8 了，因为这里有可能是中文的字段并不是从前台得到，而是从 cookie 中格式正确的中文得到。</p>
+<h1 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h1><p>为了消灭乱码，请如下操作：</p>
+<p>一次性操作：</p>
+<ol>
+<li>将 Eclipse 默认编码设置为 UTF-8</li>
+<li>在 MySQL 安装目录下 bin 下找到 MYSQLInstanceConfig.exe 重新配置安装选项，在选择编码时选择 UTF-8<br>（这样也不需要在每次建库时用长长一串指定 UTF-8 了）</li>
+<li>（补充）Eclipse：Window =&gt; Preference =&gt; Web=&gt; Jsp file下也改编码为 UTF-8 ，这个值不随 Eclipse 默认值改变，如果不改的话每次新建 Jsp 还要手动把三处 ISO8859-1 改成 UTF-8</li>
+</ol>
+<p>编程时需要注意的：</p>
+<ol>
+<li>后台接收前台传来的值时，如果值有可能是中文，接收完立即调用 <code>str = new String(str.getBytes(&quot;iso8859-1&quot;), &quot;utf8&quot;)</code>转码（立即调用：这样进行 SQL 查询和存 cookie 时都不用额外转码）<br>（5.23 PS：按 ltl 同学的方法，在接收值之前加上<code>request.setCharacterEncoding(&quot;UTF-8&quot;)</code>可以解决这个问题，照原理来看应该也是可以的，然而我之前试验过没有成功，可能是那时候 Eclipse 自带浏览器的问题，待试验。如果这个证明可行，那么这一点可以和“其他”下的第 2 点归结为同一点，即后台 servlet 的 <code>doGet</code> 和 <code>doPost</code> 在开始写代码前都要把 request 和 response 的编码设一遍。）</li>
+<li>中文存进 cookies 时对可能为中文的字段需额外编码， <code>URLEncoder.encode(str,&quot;UTF-8&quot;)</code><br>使用 Java 读取时使用 <code>URLDecoder.decode(str, ”UTF-8″)</code> 解码。使用 JS 读取时使用 <code>decodeURI(str)</code>解码</li>
+<li>以上步骤正确，那么 Ajax 不需要额外操作</li>
+</ol>
+<p>其他：</p>
+<ol>
+<li>Eclipse 自带浏览器难以信任，请使用外部浏览器测试。（然而 chrome 多次测试后也出现了不正常的现象，可能需要休息一会？）</li>
+<li>关于在 servlet 中使用 <code>out.print</code> 输出引起乱码的问题：</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">request.setCharacterEncoding(<span class="string">"UTF-8"</span>);</span><br><span class="line">response.setContentType(<span class="string">"text/html"</span>);</span><br><span class="line">response.setCharacterEncoding(<span class="string">"UTF-8"</span>);</span><br><span class="line">PrintWriter out = response.getWriter();</span><br></pre></td></tr></table></figure></section>
+    <section class="">
+        <small>
+        TAGS:&nbsp;
+            <a class="tag-link" href="/tags/JSP/">JSP</a>&nbsp;|&nbsp;<a class="tag-link" href="/tags/Java/">Java</a>&nbsp;|&nbsp;<a class="tag-link" href="/tags/MySQL/">MySQL</a>
+        
+        </small>
+    </section>
+</article>
+
+    <div id="vcomments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.7.3/av-min.js"></script>
+    <script src="/Valine.min.js"></script>
+    <script type="text/javascript">
+        new Valine({
+            el: '#vcomments',
+            notify: true,
+            verify: false,
+            app_id: "KNr19IGaxOxhyEPC2OXwmlbK-gzGzoHsz",
+            app_key: "6FKxDyP2jMSYNYCKbk71eevC",
+            placeholder: "Say something...",
+            avatar: 'retro',
+            submail_appid: "13112",
+            submail_appkey: "e66bb0bad3a54056d660664b3f044ff5",
+            submail_template: "e1BUq2",
+            post_title: "解决 JSP 与 MySQL 下各种中文乱码问题"
+        });
+    </script>
+
+      </main>
+    </body>
+    <footer role="contentinfo" class="center">
+    <div id="site-links">
+        <a href="/archives"><i class="icon-database" style="font-size: 15px"></i></a>
+        <a href="mailto:lqn619@163.com" target="_blank" rel="external"><i class="icon-at"></i></a>
+        <a href="https://github.com/maliut" target="_blank" rel="external"><i class="icon-github"></i></a>
+        <a href="https://weibo.com/maliut" target="_blank" rel="external"><i class="icon-sina-weibo"></i></a>
+        <a href="https://steamcommunity.com/id/maliut" target="_blank" rel="external"><i class="icon-steam"></i></a>
+    </div>
+    <p id="copyright">2019&nbsp;&copy;&nbsp;<a href="/">Mの综合研究</a>&nbsp;|&nbsp;Theme <a href="https://github.com/maliut/hexo-theme-simpow" title="SimPow" target="_blank" rel="noopener">SimPow</a></p>
+</footer>
+<script>
+    console.log('Welcome!\nTheme SimPow inspired by Typescript & orzfly.com');
+</script>
+</html>

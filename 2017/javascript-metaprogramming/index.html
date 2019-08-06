@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <!--<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">-->
+    
+    <title>JavaScript 元编程 | Mの综合研究</title>
+    <link href="https://cdn.bootcss.com/normalize/8.0.0/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+    <body>
+      
+<header role="banner" id="site-banner" class="unselectable center ">
+    
+        <a id="site-logo" href="/"><span class="site-logo-large">Mの</span><br /><span>综合研究</span></a>
+    
+    <nav role="navigation" id="site-nav">
+        <ul>
+        
+            <li><a href="/categories/proj" class="intent3"><i class="icon-folder"></i>&nbsp;项目</a></li>
+        
+            <li><a href="/categories/tech" class=""><i class="icon-cog"></i>&nbsp;技术</a></li>
+        
+            <li><a href="/categories/life" class=""><i class="icon-heart"></i>&nbsp;生活</a></li>
+        
+            <li><a href="/idea" class=""><i class="icon-hangouts"></i>&nbsp;想法</a></li>
+        
+            <li><a href="/about" class=""><i class="icon-user"></i>&nbsp;关于</a></li>
+              
+        </ul>
+    </nav>
+</header>
+      <main role="main" class="center">
+        
+<article class="post">
+    <h1 class="">JavaScript 元编程</h1>
+    <time class="">2017/06/30</time>
+    <section><p>最近阅读《Ruby 元编程》一书，拍案叫绝，又想到 JavaScript 语言和 Ruby 类似，相当灵活且具有一些元编程的特性，而且最近以及不久的将来都可能需要和 JavaScript 打交道，因此希望对照着这本书，探究些 JavaScript 元编程的特性。</p>
+<a id="more"></a>
+<h1 id="语言构件"><a href="#语言构件" class="headerlink" title="语言构件"></a>语言构件</h1><p>元编程是对语言构件的操作，因此为了了解元编程，需要先了解它们语言构件的异同。</p>
+<p>在 Ruby 中，一切都是对象。一个对象则必然属于一个类。一个类是 <code>Class</code> 类的对象，而所有的类都是 <code>Object</code> 类的子类（严格来说是 <code>BasicObject</code>）。可以用一张图来展示：</p>
+<p><img src="http://wx4.sinaimg.cn/mw690/65381e00gy1fh3ks78pr4j20kv09p3yo.jpg" alt="img"></p>
+<p>在 JavaScript 中，一切依然是对象。但是它并不是基于类和继承构建的，而是基于独特的原型机制。JavaScript 的对象分为普通对象和函数。而函数除了普通调用以外，还可以通过 <code>new</code> 关键字调用，生成一个新的对象，而此时这个函数被称为构造函数。从形式上看，就像 Java 之类的用法。而每一个函数都会有一个 <code>prototype</code> 属性（除 <code>Function.prototype</code>），每一个对象都会有 <code>__proto__</code>  属性指向它的 <code>prototype</code> 。当访问一个对象的属性时，先在这个对象自身上找，若没有则在 <code>__proto__</code> 属性上寻找。这就是字面上“原型机制”的意义，即通过同一个构造函数构造的对象，都会表现得像这个构造函数的原型。</p>
+<p>JavaScript 的原型机制很有趣但令人费解。这里也只是蜻蜓点水，详细的解释可以参考网上的各种文章和知乎问答。只是随着 JavaScript 的用途越发广泛，对于适应了主流语言的程序员来说，很难利用它的原型机制构建起可靠的大规模应用，因此不停地有各种将 JavaScript 类化的方案。一种比较常规的做法是，将构造函数作为类，对于各个对象的属性，定义在对象自身上；而对于各个对象共享的方法，定义在类的原型对象上。对于继承，由于类的原型对象也是一个普通的对象，将其 <code>__proto__</code> 属性指向父类的原型对象，就可以继承父类的方法了。（讲的比较简略，读者可以自己推演下。另外，这并不是完美的做法，关于 JS 的继承衍生出不下五六种方法，感兴趣可以自行搜索）</p>
+<p>面对程序员们的广泛需求，在最新的 es6 标准中引入了 class 语法糖，帮助程序员以他们熟悉的方式来编写代码。 class 的基本原理正是上述的方案（当然，总有各种细节上的注意点，具体请参考 es6 标准的解读）。模仿上面那张图可以得到：</p>
+<p><img src="http://wx1.sinaimg.cn/mw690/65381e00gy1fh3mgeoon5j20kx08q0so.jpg" alt="img"></p>
+<p>首先 JavaScript 中并没有和 Ruby 意义类似的 Module。其次，Function 在很大程度上类似其他语言的 Class 概念。再次，我没有在图中列出 superclass 关系。如果按照 es6 的 extends 关键字，那么 superclass 一定指代正确的父类，而对于图中这三个顶层的类，若按照上文的逻辑来分析，则会显得有些奇怪。</p>
+<p>姑且称图中的 <code>Object</code>、<code>Function</code>、<code>MyClass</code> 是顶层类。按照上文逻辑分析它们的 superclass，则都指向 <code>Function.prototype</code>，这是一个函数对象。而它的 superclass 指向 <code>Object.prototype</code>，这是一个普通对象。尽管一个普通对象不再是一个类了，但你仍然可以找到它的 <code>__proto__</code> 属性指向 null。在网上也能找到继承这三个奇怪的东西的分析。扯得有点远了。由于我们希望对程序员隐藏 JavaScript 的原型机制，我个人并不希望将 <code>Function.prototype</code> 视作所有类的父类。尽管如此，你依然可以在 <code>Function.prototype</code> 中定义所有函数对象可以访问的属性/方法，在 <code>Object.prototype</code> 中定义所有对象可以访问的属性/方法。</p>
+<h1 id="元编程"><a href="#元编程" class="headerlink" title="元编程"></a>元编程</h1><p>在上文中，我们实际上已经完成了第一步：将 JavaScript 类化。接下来，不妨按照《Ruby 元编程》中所列出的各种“法术”，寻求在 JavaScript 中的实现方法。</p>
+<h2 id="内省"><a href="#内省" class="headerlink" title="内省"></a>内省</h2><p>内省使对象可以在运行时查询关于自己的一些信息，例如对象的类，类的父类，对象拥有哪些属性和方法等等。我们知道 JavaScript 中的类就是一个对象的构造函数，正好 JavaScript 提供了 <code>obj.constructor</code> 属性来查询对象的构造函数。得到父类同样简单，根据继承的原理，一个类的父类正是这个类的原型的原型所在的类，即 <code>class.prototype.__proto__.constuctor</code> 。</p>
+<p>至于对象身上的属性和方法， es6 提供了 Reflect 类来查询，其中很多方法来自于原先的 Object 类。将类命名为 Reflect 更好地体现了“反射”这一意图。</p>
+<h2 id="动态派发"><a href="#动态派发" class="headerlink" title="动态派发"></a>动态派发</h2><p>调用一个对象的方法，实际上是向这个对象发送一条消息。基于这个思想，Ruby 中可以使用 <code>obj.send(&quot;method_name&quot;, args)</code>，动态地调用一个方法。方法名可以使用字符串拼装出来，因此大大提高了代码的灵活性。而在 JavaScript 中，方法不过是对象的一个函数属性，而属性本身也可以用字符串表示，也就是说，动态派发在 JavaScript 的设计中，并不是什么高级的用法，仅仅是一种再自然不过的语言特性罢了。在 Javascript 中上述代码等价于 <code>obj[&quot;method_name&quot;]()</code>。</p>
+<p>作用域绑定、define/delete、eval 和 new Function</p>
+<p>不能做的要素：类宏</p>
+<p>proxy能做的：methodmissing</p>
+<h1 id="一些感想"><a href="#一些感想" class="headerlink" title="一些感想"></a>一些感想</h1></section>
+    <section class="">
+        <small>
+        TAGS:&nbsp;
+            <a class="tag-link" href="/tags/JavaScript/">JavaScript</a>&nbsp;|&nbsp;<a class="tag-link" href="/tags/Metaprogramming/">Metaprogramming</a>&nbsp;|&nbsp;<a class="tag-link" href="/tags/Ruby/">Ruby</a>
+        
+        </small>
+    </section>
+</article>
+
+    <div id="vcomments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.7.3/av-min.js"></script>
+    <script src="/Valine.min.js"></script>
+    <script type="text/javascript">
+        new Valine({
+            el: '#vcomments',
+            notify: true,
+            verify: false,
+            app_id: "KNr19IGaxOxhyEPC2OXwmlbK-gzGzoHsz",
+            app_key: "6FKxDyP2jMSYNYCKbk71eevC",
+            placeholder: "Say something...",
+            avatar: 'retro',
+            submail_appid: "13112",
+            submail_appkey: "e66bb0bad3a54056d660664b3f044ff5",
+            submail_template: "e1BUq2",
+            post_title: "JavaScript 元编程"
+        });
+    </script>
+
+      </main>
+    </body>
+    <footer role="contentinfo" class="center">
+    <div id="site-links">
+        <a href="/archives"><i class="icon-database" style="font-size: 15px"></i></a>
+        <a href="mailto:lqn619@163.com" target="_blank" rel="external"><i class="icon-at"></i></a>
+        <a href="https://github.com/maliut" target="_blank" rel="external"><i class="icon-github"></i></a>
+        <a href="https://weibo.com/maliut" target="_blank" rel="external"><i class="icon-sina-weibo"></i></a>
+        <a href="https://steamcommunity.com/id/maliut" target="_blank" rel="external"><i class="icon-steam"></i></a>
+    </div>
+    <p id="copyright">2019&nbsp;&copy;&nbsp;<a href="/">Mの综合研究</a>&nbsp;|&nbsp;Theme <a href="https://github.com/maliut/hexo-theme-simpow" title="SimPow" target="_blank" rel="noopener">SimPow</a></p>
+</footer>
+<script>
+    console.log('Welcome!\nTheme SimPow inspired by Typescript & orzfly.com');
+</script>
+</html>
