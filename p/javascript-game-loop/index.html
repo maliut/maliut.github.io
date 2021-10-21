@@ -124,7 +124,7 @@
 <p>让我们实际看一看：</p>
 <iframe width="100%" height="300" src="//jsrun.net/NEIKp/embedded/all/light" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 <p>如果你调整 <code class="language-text">boxVelocity</code> 的值，你会看到方块会正确地呆在它应该在的地方。不错！</p>
-<p>注意： timestep 值的选择并不是任意的。分母有效地限制了用户能够感知的每秒帧数（除非绘制是插值的，如下所述）。当实际 FPS 低于最大值时，降低 timestep 会增加可感知到的最大 FPS，但代价是每一帧执行 <code class="language-text">update()</code> 的次数会更多。由于执行 <code class="language-text">update()</code> 越多，消耗的时间也越多，这就又会降低帧率。如果帧率降的太多，就可能会陷入一种死亡螺旋。</p>
+<p>注意： timestep 值的选择并不是任意的。分母有效地限制了用户能够感知的每秒帧数（除非绘制是插值的，如后文所述）。当实际 FPS 低于最大值时，降低 timestep 会增加可感知到的最大 FPS，但代价是每一帧执行 <code class="language-text">update()</code> 的次数会更多。由于执行 <code class="language-text">update()</code> 越多，消耗的时间也越多，这就又会降低帧率。如果帧率降的太多，就可能会陷入一种死亡螺旋。</p>
 <h2>死亡螺旋</h2>
 <p>遗憾的是我们又引入了一个新问题。在我们的初次尝试中，如果一帧花费了比较长的时间执行更新和渲染，帧率就会自然地降低，直到每一帧花费的时间足够更新和渲染完成。然而，现在我们的更新依赖于时间。如果某一帧花费了较长时间来模拟，那么下一帧会需要模拟更长的时间。这意味着我们需要更多次执行 <code class="language-text">update()</code> 方法，而这进一步意味着这新的一帧需要花费更多的时间来模拟，如此往复……直到整个应用无法响应然后挂掉。这就是死亡螺旋。</p>
 <p>一般来说，只要我们把 timestep 的值设的足够高，每次执行 <code class="language-text">update</code> 的开销都比它模拟的时间要短，这样就不会有问题。但执行开销在不同的硬件和负载上都是不一样的。而且我们讨论的是 JavaScript 环境，意味着我们对执行环境只有很微小的控制权。如果用户切换到另一标签页，浏览器就会停止当前标签页的渲染，当用户再切回来时，我们就累积了很长一段时间要去做模拟。如果这消耗了太多时间，浏览器就会挂起。</p>
@@ -140,8 +140,8 @@
             <span class="token keyword">break</span><span class="token punctuation">;</span>   <span class="token comment">// 跳出循环</span>
         <span class="token punctuation">}</span>
     <span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
-<p>在我们的 panic 方法中要做些什么呢？这得看情况。</p>
-<p>回合制多人游戏用了一种叫“锁步”的网络技术，它可以保证所有的玩家以相同步调进行游戏。这意味着所有玩家体验到的都是最慢的那个人的速度。如果一个玩家实在落后太多，他就会掉线，这样就不会拖慢其他玩家。因此，在锁步的游戏中，这个玩家就掉线了。</p>
+<p>在我们的 <code class="language-text">panic</code> 方法中要做些什么呢？这得看情况。</p>
+<p>回合制多人游戏用了一种叫“锁步（lockstep，亦称为帧同步）”的网络技术，它可以保证所有的玩家以相同步调进行游戏。这意味着所有玩家体验到的都是最慢的那个人的速度。如果一个玩家实在落后太多，他就会掉线，这样就不会拖慢其他玩家。因此，在锁步的游戏中，这个玩家就掉线了。</p>
 <p>在一个没有使用锁步的多人游戏，比如第一人称射击游戏中，一般都会有一个服务器维持着游戏的“权威状态”。也就是说，服务器会接收所有玩家的输入，并计算出游戏世界应有的样子，以避免玩家作弊。如果一个玩家的本地游戏距离权威状态太远，即 panic 的状态，那么这个玩家需要被拉回权威状态。（在实践中，如果直接把玩家拉回去会令人很迷惑，所以一般会有一个替代的 <code class="language-text">update</code> 方法，让客户端能够更加平滑地回到服务端的权威状态。）一旦我们把用户拉回了最新的状态，我们就不需要再去本地模拟这一堆剩下的时间了，因为我们已经把这些时间高效快进掉了。因此我们可以把它们丢弃掉：</p>
 <div class="gatsby-highlight" data-language="javascript"><pre style="counter-reset: linenumber NaN" class="language-javascript line-numbers"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">panic</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     delta <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment">// 丢弃未模拟的时间</span>
@@ -150,7 +150,6 @@
 <p>如果在服务端这么干，会引起不确定性的行为，不过只有服务端需要保证游戏运行的确定性，所以在多人游戏的客户端这么做是完全可以的。</p>
 <p>在单机游戏中，我们可以让游戏继续运行一会看看游戏运行速度能不能赶上来。但当游戏在中间状态过渡时，游戏会看上去在几帧之内运行得飞快。另一种可以接受的方法是，直接丢弃未模拟的时间，就像我们前面在非锁步的多人游戏中做的那样。这会引入不确定性的行为，不过你可能觉得这是个极端情况，可以另当别论。</p>
 <p>无论如何，如果游戏持续出现 panic 的情况，而且也不是因为标签页在后台引起的，这可能提示了游戏的主循环运行得实在太慢了。也许你需要增大 timestep 的值。</p>
-<iframe width="100%" height="300" src="//jsrun.net/UvLKp/embedded/all/light" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 <h3>FPS 控制</h3>
 <p>另一种可以避免死亡螺旋（总的来说，避免低帧率）的方法是监控游戏的运行帧率，并在帧率过低时，调整主循环中的行为。往往在 panic 状态发生前，我们就能检测到掉帧的情况，可以由此来预防 panic 。</p>
 <p>有许多监测帧率的方式，其一是在一段时间内（比如最近 10 秒）持续监测每秒渲染的帧数，并取平均值。然而这稍微有点吃性能，而且我们希望最近几秒钟的帧数能获得更高的权重。一种简单做法是，使用<em>加权平均</em>来计算权重：</p>
