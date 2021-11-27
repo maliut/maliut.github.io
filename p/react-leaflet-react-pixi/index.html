@@ -24,10 +24,10 @@
   <span class="token operator">&lt;</span><span class="token operator">/</span>Marker<span class="token operator">></span>
 <span class="token operator">&lt;</span><span class="token operator">/</span>MapContainer<span class="token operator">></span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
 <p>我们做一个地图类的应用，往往需要在地图上绘制各种标记、图形等。Leaflet 本身已经提供了这些功能，你可以直接使用 marker 在地图上显示一个标记（就像上面的代码那样），也可以使用 Path、Polygon 等功能画一些简单的图形。</p>
-<p>但这些绘图功能都比较简单，往往满足不了我们的需要。更重要的问题是，绘图功能的默认原理是向网页中插入新的 DOM、SVG 等元素，并在地图发生拖动、缩放时，动态改变它们的 CSS 样式。当这些元素变得越来越多时，容易使网页变得卡顿。</p>
-<p>因此，我们需要使用更有效率的方式来绘图。不难想到可以使用 Canvas 实现。当然市面上也有了类似的解决方案，例如 <a href="https://github.com/eJuke/Leaflet.Canvas-Markers">Leaflet.Canvas-Markers</a> ，<a href="https://github.com/CartoDB/Leaflet.CanvasLayer">Leaflet.CanvasLayer</a> 等等。</p>
+<p>但这些绘图功能都比较简单，往往满足不了我们的需要。更重要的问题是，绘图功能的默认原理是向网页中插入新的 DOM、SVG 等元素，并在地图发生拖动、缩放时，动态改变它们的 CSS 样式。当这些元素变得越来越多时，网页容易变得卡顿。</p>
+<p>因此，我们需要使用更有效率的方式来绘图。不难想到可以使用 Canvas 实现。当然市面上也早已有了类似的解决方案，例如 <a href="https://github.com/eJuke/Leaflet.Canvas-Markers">Leaflet.Canvas-Markers</a> ，<a href="https://github.com/CartoDB/Leaflet.CanvasLayer">Leaflet.CanvasLayer</a> 等等。</p>
 <p>不过提到 2D Canvas 绘图，显然有个更好的方案就是 <a href="https://pixijs.com/">PixiJS</a> 。它不仅为我们封装了繁琐的 Canvas API，更能通过 WebGL 的能力进一步提升性能，还自带了交互和动画的能力。</p>
-<p>当然，和 Leaflet 一样，PixiJS 也是采用的命令式 API，在 React 中显得不甚优雅。不过也同样，我们可以通过现成的 <a href="https://reactpixi.org/">React Pixi</a> 库来帮助我们使用声明式语法操作 PixiJS 。</p>
+<p>当然，和 Leaflet 一样，PixiJS 采用的也是命令式 API，在 React 中显得不甚优雅。不过也同样，我们可以通过现成的 <a href="https://reactpixi.org/">React Pixi</a> 库来帮助我们使用声明式语法操作 PixiJS 。</p>
 <div class="gatsby-highlight" data-language="javascript"><pre style="counter-reset: linenumber NaN" class="language-javascript line-numbers"><code class="language-javascript"><span class="token comment">// pure pixijs 语法</span>
 <span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PIXI<span class="token punctuation">.</span>Application</span><span class="token punctuation">(</span><span class="token punctuation">{</span> width<span class="token operator">:</span> <span class="token number">640</span><span class="token punctuation">,</span> height<span class="token operator">:</span> <span class="token number">360</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 document<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>app<span class="token punctuation">.</span>view<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -76,7 +76,7 @@ app<span class="token punctuation">.</span>stage<span class="token punctuation">
   </a>
     </span></p>
 <hr>
-<p>问题的核心就在于，我们如何能将 Leaflet.PixiOverlay 与 React Leaflet 和 React Pixi 结合起来，在使用时对这些丑陋的胶水代码无感知。我们理想的代码长这个样子：</p>
+<p>问题的核心就在于，我们如何能将 Leaflet.PixiOverlay 与 React Leaflet 和 React Pixi 结合起来，在开发时对这些丑陋的胶水代码无感知。我们理想的代码长这个样子：</p>
 <div class="gatsby-highlight" data-language="javascript"><pre style="counter-reset: linenumber NaN" class="language-javascript line-numbers"><code class="language-javascript"><span class="token punctuation">{</span><span class="token comment">/* React Leaflet 封装的地图容器 */</span><span class="token punctuation">}</span>
 <span class="token operator">&lt;</span>MapContainer <span class="token operator">...</span><span class="token operator">></span>
   <span class="token punctuation">{</span><span class="token comment">/* 地图的图层 */</span><span class="token punctuation">}</span>
@@ -227,12 +227,12 @@ container<span class="token punctuation">.</span><span class="token function">ad
   </a>
     </span></p>
 <blockquote>
-<p>PixiJS 也提供了 Devtools 用于查看 PixiJS 对象树。但有个坑点是，它是通过检测 <code class="language-text">window.PIXI</code> 对象来判断页面是否使用 PixiJS 的，因此在现代前端项目中，你需要在代码中定义 <code class="language-text">window.PIXI = PIXI</code> 。</p>
+<p>PixiJS 也提供了 Devtools 用于查看 PixiJS 对象树。但有个坑点是，它是通过检测 <code class="language-text">window.PIXI</code> 对象来判断页面是否使用 PixiJS 的，因此在现代前端项目中，你需要在代码中手工定义 <code class="language-text">window.PIXI = PIXI</code> 。</p>
 </blockquote>
 <p>在这个例子中可以看到，我们刚开始就把 PixiJS 的对象树给建立好了，而每次重绘只是修改了 Text 的属性。但在真实项目中，对象树的层级、以及涉及子元素的增删改会复杂许多。如果每次的变化都需要我们手动来管理，还是很麻烦的。这其实和我们手动操作 DOM 树遇到的问题是一样的，也就是为什么我们需要用声明式的语法来写 PixiJS 。</p>
 <p>那么下面就来继续探索如何结合 React Pixi 。</p>
 <h2>结合 React Pixi</h2>
-<p>但是结合 React Pixi 就没有前面那么容易了。或许我们会想把 React Pixi 的内容直接渲染到 <code class="language-text">MapContainer</code> 内部：</p>
+<p>结合 React Pixi 就没有前面那么容易了。或许我们会想能不能直接把 React Pixi 的内容渲染到 <code class="language-text">MapContainer</code> 内部：</p>
 <div class="gatsby-highlight" data-language="javascript"><pre style="counter-reset: linenumber NaN" class="language-javascript line-numbers"><code class="language-javascript">  <span class="token operator">&lt;</span>MapContainer <span class="token operator">...</span><span class="token operator">></span>
     <span class="token operator">&lt;</span>TileLayer <span class="token operator">...</span> <span class="token operator">/</span><span class="token operator">></span>
     <span class="token punctuation">{</span><span class="token comment">/* Stage 是 React Pixi 的根节点 */</span><span class="token punctuation">}</span>
