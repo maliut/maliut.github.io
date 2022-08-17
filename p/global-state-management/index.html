@@ -2,7 +2,7 @@
 <!--more-->
 <p>要说现代前端有哪些最混沌的领域，那状态管理必然占据了一席之地。似乎每个人都能插上两脚，知乎大佬们人均一个轮子。我今天也难以免俗地趟一趟浑水，不过我不会谈论那些具体的状态管理轮子，而是聚焦于【全局（集中式）状态 vs 本地（组件级）状态 】这一个话题上。</p>
 <br>
-<p>在我大学时第一次接触 React 时，正是 Redux 如日中天的时候，那时使用 React 基本上等同于使用 Redux 全家桶。紧接着社区里出现了反思的声音，认为“你或许不需要 Redux”，不要无脑地把状态都交给 Redux 来管理。   </p>
+<p>在我大学第一次接触 React 时，正是 Redux 如日中天的时候，那时使用 React 基本上等同于使用 Redux 全家桶。紧接着社区里出现了反思的声音，认为“<a href="https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367">你或许不需要 Redux</a>”，不要无脑地把状态都交给 Redux 来管理。   </p>
 <p>随后，Hooks 的出现大大简化了状态和组件逻辑的复用。鉴于此，大家认为使用 <code class="language-text">useState</code> + <code class="language-text">useReducer</code> + <code class="language-text">context</code> 足以完成状态管理的职责，或仅对它们做一个简单封装后使用。   </p>
 <p>从使用哲学上，也认为状态应尽量贴近于使用它的组件，以实现组件功能上的自治。支持组件级别的 local state 成为了状态管理库的标配功能，而 Redux 已然成为明日黄花，人人路过都能批评两句。</p>
 <p>即使 <a href="https://react.docschina.org/docs/thinking-in-react.html">React 的官方文档</a>中也推荐将状态按上述的原则，自下而上定义。</p>
@@ -174,7 +174,7 @@
 <p>在脉络的一端，是我们熟知的传统博客、展示型官网等。这些前端只有数据，几乎没有状态一说，自然也不存在什么所谓的状态管理。   </p>
 <p>而脉络的另一端，则是放在十几年前只可能出现在桌面端的在线文档、视频编辑器、页游等应用。这些应用的开发者，他们的关注点早已超越了什么组件化与全局状态之争。他们早已更进一步，研究起了状态具体的组织形式、数据结构等，以适应其特殊的需求。</p>
 <blockquote>
-<p>如果你需要处理复杂的动画或 AI 逻辑，你可能需要使用 <a href="https://github.com/statelyai/xstate">xstate</a> 把状态抽象为状态机；如果你需要多人协同，你可能需要 <a href="https://zhuanlan.zhihu.com/p/452980520">Yjs 处理状态的同步与冲突</a>；如果是业务逻辑重前端的应用，<a href="https://zhuanlan.zhihu.com/p/421300074">你可能需要借助 MobX</a>、<a href="https://www.zhihu.com/question/546185320">Remesh</a> 等实践前端 DDD：在这些场合中，我们熟悉的基于 Plain Object 的传统状态管理早已不够用了。</p>
+<p>如果你需要处理复杂的动画或 AI 逻辑，你可能需要<a href="https://juejin.cn/post/7045090471852376101">使用 xstate 把状态抽象为状态机</a>；如果你需要多人协同，你可能需要 <a href="https://zhuanlan.zhihu.com/p/452980520">Yjs 处理状态的同步与冲突</a>；如果是业务逻辑重前端的应用，<a href="https://zhuanlan.zhihu.com/p/421300074">你可能需要借助 MobX</a>、<a href="https://github.com/remesh-js/remesh">Remesh</a> 等实践前端 DDD：在这些场合中，我们熟悉的基于 Plain Object 的传统状态管理早已不够用了。</p>
 </blockquote>
 <p><span
       class="gatsby-resp-image-wrapper"
