@@ -1,4 +1,292 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Mの综合研究]]></title><description><![CDATA[somewhere about myself]]></description><link>https://maliut.space</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 31 Dec 2023 09:21:14 GMT</lastBuildDate><item><title><![CDATA[再见，2023]]></title><description><![CDATA[…]]></description><link>https://maliut.space/p/goodbye-2023/</link><guid isPermaLink="false">https://maliut.space/p/goodbye-2023/</guid><pubDate>Sun, 31 Dec 2023 16:38:00 GMT</pubDate><content:encoded>&lt;p&gt;临近年末，大家又纷纷在各个社交平台上写起了年终总结。通常来说，我对写年终总结这件事并不感兴趣。以我的习惯，即使是写些随笔，通常也会确定一个主题。而所谓的跨年、纪念日，无非是人类人为定义的时间点罢了，并没有什么值得特别一提的价值。   &lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Mの综合研究]]></title><description><![CDATA[somewhere about myself]]></description><link>https://maliut.space</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 14 Jan 2024 13:46:52 GMT</lastBuildDate><item><title><![CDATA[笔记形态进化史]]></title><description><![CDATA[…]]></description><link>https://maliut.space/p/evolution-of-the-note-form/</link><guid isPermaLink="false">https://maliut.space/p/evolution-of-the-note-form/</guid><pubDate>Sun, 14 Jan 2024 18:08:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;这里是知识管理系列的第二篇，来聊一聊笔记软件的形态变迁。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;自大学始，由于专业习惯，我便基本抛弃了手写笔记，改用电脑记笔记。选择趁手的笔记软件，就尤为重要。在此记录下自己使用过的一些笔记软件，从中也可一窥近年来笔记软件的发展脉络。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;h2&gt;纯文本与富文本&lt;/h2&gt;
+&lt;p&gt;记笔记最简单朴素的选择就是系统自带的记事本软件，方便快捷，无需任何使用门槛。&lt;/p&gt;
+&lt;p&gt;或许大家会觉得记事本很 low，但事实上在上课等需要速记的场景中，我们需要软件快速打开、响应，但对排版没有这么高的要求，完全可以事后再进行整理。此时记事本就成为了你的不二之选。&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 626px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/dfbcdf5955290d4f5e6064a24fc9c7e9/af590/image.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 51.724137931034484%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAByklEQVQoz6VS27KTQBDkg/0r/QE/QGP5YEKFS3JiTqXOIQYI94Q7hF1u7ezKUZ98kaqu6WGWmV56lLLlSNMMrOvwv08URVCGvkc/A9M8o2lqtG0LxhnyPMf9nqKg2LYP4ndZr+saaZaRiBS32w1xHMtvBARXgqzBl5cMD8ZhXy44HL5D13Womw222y026zXM3Q7X61U2SGlIEPjwKLdtG+fzGWVZkoDil0LeD5gWyePAMfIOdVmgoYkdY6iqGnlR/vOq8xLFQKUoclxdFxU1eW9UePcxxoddLQ80fEY3AN0I1GykfAH7g/qN8wmOTwof3YNUVOgoHmOOT1aLQ8QwzqLZBDbMYOMM/obhL77kjM7RTIRxAqVpGvRkDKPrYSBMnO7OwcmYeRox9Bw9cU71nvg0jrImchFFPg6DjIHvQ0mSBNni2l0iw8mJcLRcfFVNHF5sHH8EcD2fDLBgmiYcx4VPHzuOgx0Ztt/v4VH9dDqJf0gGkEqxDgKCv/opni8+Pn/T8fTq4tlJEIQxuXqRDT1qJlbE9zzohg7DMBGGISzLgrKmtVBVVWJDqyKirmnQNJ0mP8kV0mSuETekGl3Xfr8TuVApBq1WK/wEEcju4g8M/24AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;files image&quot;
+        title=&quot;files image&quot;
+        src=&quot;/static/dfbcdf5955290d4f5e6064a24fc9c7e9/af590/image.png&quot;
+        srcset=&quot;/static/dfbcdf5955290d4f5e6064a24fc9c7e9/2efce/image.png 203w,
+/static/dfbcdf5955290d4f5e6064a24fc9c7e9/1d180/image.png 405w,
+/static/dfbcdf5955290d4f5e6064a24fc9c7e9/af590/image.png 626w&quot;
+        sizes=&quot;(max-width: 626px) 100vw, 626px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;metadata&quot;&gt;我通常使用 win+r 记忆的 notepad 回车就可以快速打开一个记事本窗口&lt;/p&gt;
+&lt;p&gt;但毕竟我们的需求并不仅仅是临时记录，记事本终究难堪大任，因此我们大部分人随即都会把目光放到富文本编辑器上面，其中最强大的也是我们最熟悉的就是 Word 了。也会有不少人选择更加“专业对口”的 OneNote。&lt;/p&gt;
+&lt;p&gt;作为大而全的富文本编辑器，Word 能够满足几乎所有的排版需求。但过大的自由度有时候也并不是一件好事。一方面，我们容易纠结于排版的细节踟蹰不定。另一方面，操作的繁琐也使得我们不得不键鼠并用，容易打断笔记编辑时的心流体验。&lt;/p&gt;
+&lt;p&gt;如果说上述的问题，只是我们在还没用习惯强大软件之前的“自己的问题”，但“将 Word 作为笔记软件”这种使用方式本身也并非没有缺点。Word 将文件存储为私有格式，非常不利于检索和版本管理。如果你有多个 TXT 文件，你可以将它们放在同一个文件夹中，很方便地进行全文搜索。而如果你的笔记在多个 Word 文件中，就很难进行跨文件的搜索了。这对于构建自己的知识库是一个致命的问题。&lt;/p&gt;
+&lt;p&gt;大部分人用到的 Word 功能不到 10%。为了一些绝大多数我们用不到的功能，而需要忍受如此不便，这性价比未免太低。有没有一种折中的方法，既能保留纯文本的便捷，又能覆盖到做笔记的常用需求呢？&lt;/p&gt;
+&lt;h2&gt;Markdown&lt;/h2&gt;
+&lt;p&gt;没错，Markdown 就是这个问题的答案。&lt;/p&gt;
+&lt;p&gt;Markdown 本质上也是和 TXT 一样的纯文本文件。也就是说，你可以同样使用记事本编写。但和纯文本不同的是，你可以使用一些特殊的格式来标识文档的成分。例如：&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# 这是一级标题
+## 这是二级标题
+
+这是**加粗文字**
+
+这是一个列表：
+1. apple
+2. banana
+3. orange&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;然后，在支持 Markdown 格式的软件、网站中，你的文档就会像富文本一样被美观地渲染出来。比如将标题放大加粗、列表添加统一的缩进等等。可以理解为它们自动帮你进行了类似 Word 的排版操作。   &lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 810px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/b5788583dbbdf45d2104396ae426791b/1d499/image_y.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 48.768472906403936%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAABG0lEQVQoz33R2W6DMBAF0Pz/3zWPTZUmQAxmDZvxyu3YaapKYB5GRqPh6I59qviItq3BywrPfoDSBotUkEqH8t+aequUWLWGEyKcK4B1XTd1yh4DGC+RF3wfpNKE2SSBbVvoywWWcyAG3nuNz85gkDYk+Y+9EhKoVMDsNMFWFRydUfDRTkibCc0ooH5X3IDUQ1MDhNk0ja4bwC67wbAr1NjTegZyAyq6Bo3KXwvLIefZa3Ax8PuegBUlpLabdO+EklZmOUeaMYhl2V2XOi/w43ym4Rza7IO+xCLR04MNw4hpmqP3F0CWF6jqZvO6fxj1nHVQlMzPHWEBNDR8lM73rTEYuye+rrfwcIcJ/Q8x7A0aAp21EGKBc+4Q/AH/IgyHtK6PDQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;files image y&quot;
+        title=&quot;files image y&quot;
+        src=&quot;/static/b5788583dbbdf45d2104396ae426791b/d7542/image_y.png&quot;
+        srcset=&quot;/static/b5788583dbbdf45d2104396ae426791b/2efce/image_y.png 203w,
+/static/b5788583dbbdf45d2104396ae426791b/1d180/image_y.png 405w,
+/static/b5788583dbbdf45d2104396ae426791b/d7542/image_y.png 810w,
+/static/b5788583dbbdf45d2104396ae426791b/d56b5/image_y.png 1215w,
+/static/b5788583dbbdf45d2104396ae426791b/0d292/image_y.png 1620w,
+/static/b5788583dbbdf45d2104396ae426791b/1d499/image_y.png 1632w&quot;
+        sizes=&quot;(max-width: 810px) 100vw, 810px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;metadata&quot;&gt;左侧是 Markdown 原文，右侧是它渲染出的样式，效果视不同的主题而定&lt;/p&gt;
+&lt;p&gt;Markdown 最早被广泛使用于程序员写技术文档的场景，近年来渐有出圈之势。许多笔记软件，以及知乎、简书等主流网站，都默认支持这一格式。即使像公众号等原生不支持的平台，也有人自发为其制作了 Markdown 转换工具。&lt;/p&gt;
+&lt;p&gt;不妨让我们分析一下 Markdown 的优势何在，它缘何得到了众多用户的青睐呢？&lt;/p&gt;
+&lt;p&gt;首先，Markdown 的本质是纯文本，这意味着它拥有上文提到的纯文本的所有优点 —— 简单、轻量易编辑、易于版本管理和搜索、不会被单一软件绑架等等。&lt;/p&gt;
+&lt;p&gt;其次，Markdown 的语法格式设计非常讨巧。它使用常见的符号涵盖了一篇文章的常用元素，例如标题、粗体、斜体等，甚至有序列表的符号就是非常自然的 &lt;code class=&quot;language-text&quot;&gt;1.&lt;/code&gt;  &lt;code class=&quot;language-text&quot;&gt;2.&lt;/code&gt;  &lt;code class=&quot;language-text&quot;&gt;3.&lt;/code&gt;  。&lt;del&gt;当然你是极端最佳实践派觉得应该全部使用 &lt;code class=&quot;language-text&quot;&gt;1.&lt;/code&gt; 就不在本文的讨论范畴之内了。&lt;/del&gt;这一方面使得 Markdown 上手非常简单，另一方面也意味着 Markdown 的语法噪音极低。虽然一般我们看的是 Markdown 渲染过后的结果（如上图右侧），但即便光看原文（如上图左侧），我们也很容易理解文章的内容，自动脑补出右侧的样子。&lt;/p&gt;
+&lt;p&gt;Word 中我们往往需要使用鼠标手动调整排版、修改样式。而 Markdown 使用符号标识文章元素，记录笔记内容和排版都是通过打字完成，无需脱离键盘，你得到的是即为顺滑的书写体验。&lt;/p&gt;
+&lt;p&gt;这里我想特别指出 Word 和 Markdown 中“排版”的不同点。在 Word 中排版时，我们关注的往往是标题或正文的字体、字号、颜色等。但在 Markdown 中，我们在写作时只需标注出哪里是标题，哪里是正文。至于它们最终具体长什么样，则由渲染 Markdown 的软件/网站决定。通常它们也会提供各种主题供你挑选。&lt;/p&gt;
+&lt;p&gt;这体现的是 Markdown 的“内容与样式分离”原则。在写作时，我们只需专注内容，无需为样式分心。而在调整样式时，假如我们调整了标题的样式，文章中的所有标题都会自动更改，无需担心遗漏。&lt;/p&gt;
+&lt;p&gt;其实 Word 中也能使用内容与样式分离的做法，只是大多数时候我们并不习惯于这么做&lt;/p&gt;
+&lt;p&gt;最后我们也不能忽视 Markdown 功能强大的特点。虽然大多数讲解 Markdown 的资料都着重于介绍它的简单易用，但也不要忘了 Markdown 依托的是 HTML，即网页，这一互联网的基础设施。这代表着只要网页能做的事情，Markdown 也都能做。硬要说的话，没有什么是 Word 能做而它不能做的。&lt;/p&gt;
+&lt;p&gt;当然，到这个份上，就需要一些超纲的知识了。以 Obsidian 为代表的不少软件通过插件等形式扩展了 Markdown 语法以支持这些复杂的功能。不过这些知识并非本文重点，就不详细展开了。&lt;/p&gt;
+&lt;p&gt;Markdown 也并非没有缺点。就我的观察，非计算机专业的用户入门时往往会困惑于如何居中、设置文字颜色以及调整图片的大小。虽然严格来说这并不是缺点，而是 Markdown 技术方案下的设计如此，但对小白用户来说却是实打实令人感到费解的点。&lt;/p&gt;
+&lt;h2&gt;Typora&lt;/h2&gt;
+&lt;p&gt;提到 Markdown 就不得不提到 Typora 这一款软件。Markdown 的出圈，Typora 功不可没。&lt;/p&gt;
+&lt;p&gt;传统的 Markdown 笔记软件通常采用两栏式布局。左侧放置 Markdown 的源文件，供你写作编辑。而右侧展示这个文件最终渲染出来的效果。&lt;/p&gt;
+&lt;p&gt;或许它们最早的设计师和用户都是程序员，这布局像极了代码对比工具的样子，但将其作为一个笔记软件的界面着实过于丑陋。左右两侧的内容大部分时候相差不大，浪费空间不说，还吸引你的视线不时在两侧之间切换，反倒容易打断你的写作思路。&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 810px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c12238b0996c9785d84edebb42deb7b8/a8417/image_t.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 71.42857142857143%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAAsTAAALEwEAmpwYAAACQElEQVQozyVSCY7bMAz0/19VFGiBRRsUi+Zw0HU2lqz7suT7SjreEAwh0SE5M2L27XA9vJ//5ORXLn4eyduFv+X87SoOhfn9oXHA9dc/fSjse1m/3+u/ZX0mPs9vh+8/ssuNHG/kSti1ZDfKKCkpIYIzUt5xqYOLwUmlGBdNCm0T2xRTHbquLajIKBWGK8W1184pY41zIcJTavu+v+T56XwpiuJ0Op9Op+PxdD6fU9tu23onLGMVFxWJIWzLNA/D2PfwaRqXZZmmyWhtnUsvi1+OriheV2VdJoVeum5s2z7GoWkQx5TmeV7XdRxHUpaUggdhnJf3O2ccyXEY12Vh0mZFWXHO0N55b53dozXe+WkGjsFo0HDWwJDGdzt82TrPlTAZ5cp71/bt9lg3/JZ1BabH+nw+AbsOwXuPA1gAzuPxQP4V92LCZFVR7oVOuoP1/TAN/TzgH+OI4poxJqUE1WmcwAX5bdtQzJTLKqkZq2xtfXK+t35w7ZTmdZzXCezQDcgBDRDapgVgQPga/Nw580pMKUGnPsTW923oETvfrV0/DQP4oszanbDWOsbYNE0IYXkJdi00oZFWQZkgpJfSU2qEgHLYhI7DsB9CUqZKKiitIP7n56dWqij3dxZd7Zvg565bxwGSPXYHrw0gtTGYDObDOL6kehnOhKusJKz23ijljcGqxJj2t7E2NQ0mYwJuyMRYYzcgG5JAju4cgh3zD8Aosc9ShRp9gvuyfV6owVNJpbVBFBwrLyQOUuIBP+7Vf5lhCnAhe2snAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;files image t&quot;
+        title=&quot;files image t&quot;
+        src=&quot;/static/c12238b0996c9785d84edebb42deb7b8/d7542/image_t.png&quot;
+        srcset=&quot;/static/c12238b0996c9785d84edebb42deb7b8/2efce/image_t.png 203w,
+/static/c12238b0996c9785d84edebb42deb7b8/1d180/image_t.png 405w,
+/static/c12238b0996c9785d84edebb42deb7b8/d7542/image_t.png 810w,
+/static/c12238b0996c9785d84edebb42deb7b8/a8417/image_t.png 941w&quot;
+        sizes=&quot;(max-width: 810px) 100vw, 810px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;metadata&quot;&gt;传统 Markdown 编辑器的布局样式&lt;/p&gt;
+&lt;p&gt;而 Typora 打造了一个任何人都可以轻松上手并喜欢上的软件。它最大的卖点就是在当年独一无二的实时渲染功能，在输入 Markdown 符号后就会自动渲染为富文本的样式。这种做法既保留了 Markdown 书写流畅、顺滑的优点，又与 Word 等所见即所得的富文本编辑器在表现上别无二致。它洗脱了 Markdown 的极客标签，即使是完全没听说过 Markdown 的人也有兴趣去尝试使用。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/d9fff02ebc53cf852cb42f138efa3fd2/9ea8f-ezgif-com-video-to-gif.gif&quot;&gt;&lt;/p&gt;
+&lt;p class=&quot;metadata&quot;&gt;Typora 所见即所得的编辑体验&lt;/p&gt;
+&lt;h2&gt;块笔记&lt;/h2&gt;
+&lt;p&gt;Typora 陪伴了我的整个大学生活。2021 年底，Typora 宣布推出正式版并转为付费，顿时引来了一大批用户的哀叹。&lt;/p&gt;
+&lt;p&gt;我觉得为一款优秀的软件付费是理所当然，值得鼓励的。我只是感到可惜，可惜 Typora 收费策略的生不逢时。如果它早几年开始收费，我一定会坚定地买买买。但我们不得不又提到 Notion 的横空出世。&lt;/p&gt;
+&lt;p&gt;虽说 Notion 的定位和 Typora 并不相同，Typora 只是一个文本编辑器，并不是大而全的笔记软件。但出于对它编辑体验的喜爱，我一直将它作为笔记的主力工具。而 Notion 出现后，其足以承包绝大多数笔记需求，剩余极少数的临时记录或编辑需求也足以使用记事本或代码编辑器的自带 Markdown 支持完成。Typora 在我的笔记体系中终究沦为鸡肋。&lt;/p&gt;
+&lt;p&gt;在前一篇文中我们已经介绍了 Notion 的数据库功能。但数据库之于 Notion 也不过是舶来品，Notion 真正革命性的功能是基于“块”的笔记构建形式。&lt;/p&gt;
+&lt;p&gt;初次使用 Notion 时，你会发现它兼容了 Markdown 的大多数语法，可以让你和 Typora 一样所见即所得地进行写作。但在底层，Notion 并不把文本存储为 Markdown，而是作为一个个“块”。&lt;/p&gt;
+&lt;p&gt;一个标题元素、一个段落、一张图片等等，都是一个独立的“块”，每个块都可以对其单独操作。&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 810px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/5a70a9954f1152b6b87ca03868380966/6ee58/image_b.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 31.03448275862069%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAz0lEQVQY05VQ2wqCQBD1V+rV7/Ff/YeIXhK6PFSikoKSl3V3211Ps4tSYSANHAZ251xmPFANxmC33SCK9sjzO7IshXsfhllfgmcHNQlGhyPi+IqqKsEYg9aaoGaiS+XRJIQyuOUd2rbBo66pt6ipM9bBkNkkaMhEKeXMXCL6+8KU0BWRy7pH1T9nrlO6sihwOZ+Q00kkbcHJ+BOazLymaVDQYJokLhXnHEIIh75nkFK+hSmFTWnGND9vGAQBfN/Her1CGIaOaNeyJD2S/7nhC6dqzmZmCybFAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;files image b&quot;
+        title=&quot;files image b&quot;
+        src=&quot;/static/5a70a9954f1152b6b87ca03868380966/d7542/image_b.png&quot;
+        srcset=&quot;/static/5a70a9954f1152b6b87ca03868380966/2efce/image_b.png 203w,
+/static/5a70a9954f1152b6b87ca03868380966/1d180/image_b.png 405w,
+/static/5a70a9954f1152b6b87ca03868380966/d7542/image_b.png 810w,
+/static/5a70a9954f1152b6b87ca03868380966/d56b5/image_b.png 1215w,
+/static/5a70a9954f1152b6b87ca03868380966/0d292/image_b.png 1620w,
+/static/5a70a9954f1152b6b87ca03868380966/6ee58/image_b.png 1640w&quot;
+        sizes=&quot;(max-width: 810px) 100vw, 810px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;metadata&quot;&gt;Notion 中的块&lt;/p&gt;
+&lt;p&gt;块笔记的形式，相比于 Markdown 又有不少的优点。&lt;/p&gt;
+&lt;p&gt;块相对于 Markdown 的样式有更高的可定制性。在 Markdown 中原生支持不佳的文字颜色、居中等特性，在块笔记中无非就是给块增加几个属性罢了。&lt;/p&gt;
+&lt;p&gt;将笔记的每个元素抽象为块，也极大增强了笔记内容的可扩展性。&lt;/p&gt;
+&lt;p&gt;原生 Markdown 中包含了常用的标题、段落、列表等元素，但对于更为复杂的需求，如嵌入视频、音乐、pdf 等，即使能用超纲的方法实现，但编辑和管理起来也并不友好。&lt;/p&gt;
+&lt;p&gt;而块笔记中，文本内容和其他奇奇怪怪的内容，只是不同类型的块罢了。它们都是笔记软件的“一等公民”。如果未来需要支持更多类型的内容，也只需要增加不同类型的块即可，非常方便扩展。&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 758px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/21c27ce97950fe3c2aa7b9d3db7468bc/c8e86/image_z.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 94.58128078817734%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAABYlAAAWJQFJUiTwAAACKElEQVQ4y5VUW27bMBD0/S/SC7T5KIoeIS5iNK4DJ35Jlqw3JVFPS9NdxlQk2i4aAgtSBDWc2R3uDDTatsX5fJ4E730m+J++7zHTgHXdoKprVFWl4uNwc3WZeTHPTdOo9YxRy7JEWeSQIkCWZYiiCP87aiKRpqkiwTgECDSVxCFs8G3ZYv2yxOvrGw4HC97+Cf5uDtICOqYkmcEgRVEoQJ4VYFVK+OkZj0fAPVpwXBe+HyDx3hA7L+pHXADHMw+dogGQb89Jf28fgB8PeF6vIfN8Iqs3QExwKeXAVOWw4ByKDJnlwzm5KifvhzsVuMFQr7uuUwWZSqaCRNkZSxv4s/yN4/F4V+IthrogE4aFSCFcD2EcIQgCZQGTzS12Wu6IIVWKFmnOLHOEYQDHcW4yMfd4MAiDsn0GyTXZ5hTV+DmXcKjKu90em81mlMvr3DFAkiTKtwzIc06kBtuEosLTrkIqYsRxrA6zFBNIz/w6GJSD08OPQQjxDtgSw03Y4suiQxy4sCwb2+1WSTfZ6W9mxYyY2cTYbAlZlGhkgj6xEFNxPM9ThWEWuPFCNEMNcmVsWVZoMh/d6Rmu58O2LcVwXGmzIOw9zXBS5YFhLgBxwpre8a/5XB2+V5DxBXzpNUNa1GTuJovhk1TbtlWOcKchjIOZ1pe2N/iQe96eusvXh+8kdYPFYoHVajVI/tdguSz7g+GlY7BNuBhhGFKn8QcbsBd5NsPc1z3xL1B+xlPhhTgYAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;files image z&quot;
+        title=&quot;files image z&quot;
+        src=&quot;/static/21c27ce97950fe3c2aa7b9d3db7468bc/c8e86/image_z.png&quot;
+        srcset=&quot;/static/21c27ce97950fe3c2aa7b9d3db7468bc/2efce/image_z.png 203w,
+/static/21c27ce97950fe3c2aa7b9d3db7468bc/1d180/image_z.png 405w,
+/static/21c27ce97950fe3c2aa7b9d3db7468bc/c8e86/image_z.png 758w&quot;
+        sizes=&quot;(max-width: 758px) 100vw, 758px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;metadata&quot;&gt;这些乱七八糟的东西也可以作为块插入到笔记中&lt;/p&gt;
+&lt;p&gt;更进一步地说，块笔记相比于传统笔记，体现的是它在底层逻辑上的根本不同。&lt;/p&gt;
+&lt;p&gt;传统的笔记软件，无论是类似 Word 的富文本编辑器，还是 Markdown 编辑器，它们都以文章作为最小单元。而块笔记以块作为最小单元。&lt;/p&gt;
+&lt;p&gt;更小的抽象单元意味着更灵活的组合和使用方式。块不局限于图文，块与块可以自由地排列组合，组合而成的不一定是文章，也可以是看板、目录等其他视图。&lt;/p&gt;
+&lt;p&gt;块与块之间还可以互相引用、链接，这不正对应着现实世界中，知识与知识之间也是互相连接着的吗？这也使得块笔记顺理成章地进化到了知识管理软件的形态之上。&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 810px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/40712ea92928a9df05ae3b42404cf0e0/7e21b/image_2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.99507389162561%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB6UlEQVQ4y4VT246bMBTk/3+sb92HVbSNIMom2yWEa7hjsJnOIKDZqmotWRzs8Zw5c2wvSRIcDgdozPP85buN5///xd40Tei6DsYY1HWN8/mMru/Rti2C0wlN06Dnvx8EKMtywf04HpFlGcZxhO/7S6x15xw8ay2kUlMAQ3LLJJrN7YaJZJbA53hgsolYnRXRgmcslQthURR4PB7oSdaT2FCplE/c01eJ9pizlzqSK56YQHvC7IQqRYQqryV5RwWyoU5TdFyTBTUT7fHTepPn6ChAtuwly4OEIMNFw9Icy5DFU1VhVilbTEV/xgPxlgLmtTGeWHNmkYeDPBoGOJJo3RHkCFJsiLGr8W49rFi+OpIrXggltShy/HUQMK9AJ4/WWN+NYFO2TU8N8f2ABlsMg6EXhp0b0VOpDF94n3Pg34MeGpTFHdUjRlunaCqZn7ExvH9MNrJh7BBm+cRGgEkHNyKtC9R9h240aMcBjekpwPJimxbX0wuKxKfbMWAizJyARfUeIHp9xRxFcDI//ATyEtlU4tvxO96jEB9FjEt2R1hmC7mnixrHKZuS7SVtZdVU9TMM0ZnhS7mOlpRxgpB7cXTnxba/S9ZlvTG7NnUXdWx7l+P6HIVZCFdPJyZKrlcc3t5wuVz2t6z5C8ej8patQKNgAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;files image 2&quot;
+        title=&quot;files image 2&quot;
+        src=&quot;/static/40712ea92928a9df05ae3b42404cf0e0/d7542/image_2.png&quot;
+        srcset=&quot;/static/40712ea92928a9df05ae3b42404cf0e0/2efce/image_2.png 203w,
+/static/40712ea92928a9df05ae3b42404cf0e0/1d180/image_2.png 405w,
+/static/40712ea92928a9df05ae3b42404cf0e0/d7542/image_2.png 810w,
+/static/40712ea92928a9df05ae3b42404cf0e0/d56b5/image_2.png 1215w,
+/static/40712ea92928a9df05ae3b42404cf0e0/0d292/image_2.png 1620w,
+/static/40712ea92928a9df05ae3b42404cf0e0/7e21b/image_2.png 1626w&quot;
+        sizes=&quot;(max-width: 810px) 100vw, 810px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;metadata&quot;&gt;你甚至可以利用块的组合和关联，给自己做一个管理系统&lt;/p&gt;
+&lt;p&gt;块笔记相对于 Markdown 等基于页面的笔记逻辑无疑是降维打击。自 Notion 起，许许多多的笔记后起之秀们都使用了块笔记作为它们的底层逻辑。&lt;/p&gt;
+&lt;p&gt;当然，块笔记也并非没有不足之处。&lt;/p&gt;
+&lt;p&gt;Markdown 及其背后的 HTML 有着统一的标准，这使得它们有良好的互操作性，软件的迁移成本很低，且方便与其他外部工具集成。（虽然有些 Markdown 软件为了增强自己的功能，也对 Markdown 做了不少标准之外的魔改，从而失去了这一优点。）&lt;/p&gt;
+&lt;p&gt;而块笔记由于本身的功能、块关联等能力较为复杂，难以使用一个简单的标准进行定义。各家也都有自己的标准和实现方式，并不能简单地互联互通。这也是为什么我们看到的块笔记软件都倾向于做一个 all in one 的大软件，而没有单独轻量的编辑器。&lt;/p&gt;
+&lt;h2&gt;其他&lt;/h2&gt;
+&lt;p&gt;还有一些值得一提的笔记形态，例如以 OneNote 和 AFFiNE 为代表的白板笔记。&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 810px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/70a5898dcf489c8ecc5af42cfcfac2ea/302a4/image_n.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.15763546798029%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABg0lEQVQoz6VRW24UQQyc++VOKDfID+KXI+SfDxQEF0AKEuKhBIVlw/S03c+x+41nN6M9AKXRtGS77HJ5GhtaZhdXXonWlVbi4d2odezop/+Ry0cMUNTo6hybzmTnYAarTVjQzWpZNUgP4pRy2dIn9h3E6wd1/+s1wBuJnclbxiKqvzM8f0P9W2OY0cwLKKU1Wh+jaGk5L6V/4QL2A/Onl8m1tt67s27WoOEBzaN32nnnQwzyOXJmjZyeiI/MCzOV0faFplKbsD0VoKQoUUuj4uib0j4uSFIjQ14caBdyrV1rb6xFa0l6c0k5V0FrsrOymXJrrSKzSJBw2b2cZKyQD09RgzFojPXGe4p0yP57Ruvo5vbwUxSHVSuMcgyWhjt5M7MNQCEjLGhAW+ekRYjUJdGy6JQ3qKCf0YbAnETGhby57YMMXgI7+BqD8pFrTostV6/u376bpcBFAuvAOKm8yD4/okRWzEWWJDnuEZMszLm9/2x+/CEpOFnTJLjdZndyGv+Bf153ekfM/wF5AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;files image n&quot;
+        title=&quot;files image n&quot;
+        src=&quot;/static/70a5898dcf489c8ecc5af42cfcfac2ea/d7542/image_n.png&quot;
+        srcset=&quot;/static/70a5898dcf489c8ecc5af42cfcfac2ea/2efce/image_n.png 203w,
+/static/70a5898dcf489c8ecc5af42cfcfac2ea/1d180/image_n.png 405w,
+/static/70a5898dcf489c8ecc5af42cfcfac2ea/d7542/image_n.png 810w,
+/static/70a5898dcf489c8ecc5af42cfcfac2ea/302a4/image_n.png 1080w&quot;
+        sizes=&quot;(max-width: 810px) 100vw, 810px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;metadata&quot;&gt;可以自由涂涂画画的白板&lt;/p&gt;
+&lt;p&gt;白板笔记能够将整个页面变成一个大白板，打破了页面布局的条条框框，非常适用于进行批注和创造性工作的场合。但白板这一形态本身并不适合作为笔记的主力形态，往往与其他功能配合出现（例如 OneNote 的富文本 + 白板，AFFiNE 的块 + 白板），只能算是一个锦上添花的 feature，并不能算做笔记形态进化的主干脉络之一。加之本人也并不常用白板笔记，因此就不赘述了。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;了解了形形色色的笔记形态之后，在系列的下一篇，我们将讨论如何把笔记关联起来，从而将一篇篇独立的笔记转化为完整的知识体系。   &lt;/p&gt;</content:encoded></item><item><title><![CDATA[再见，2023]]></title><description><![CDATA[…]]></description><link>https://maliut.space/p/goodbye-2023/</link><guid isPermaLink="false">https://maliut.space/p/goodbye-2023/</guid><pubDate>Sun, 31 Dec 2023 16:38:00 GMT</pubDate><content:encoded>&lt;p&gt;临近年末，大家又纷纷在各个社交平台上写起了年终总结。通常来说，我对写年终总结这件事并不感兴趣。以我的习惯，即使是写些随笔，通常也会确定一个主题。而所谓的跨年、纪念日，无非是人类人为定义的时间点罢了，并没有什么值得特别一提的价值。   &lt;/p&gt;
 &lt;p&gt;但为什么又会有这篇文章呢？说来好笑，写它的动机无非是已经好久没有在博客发布新的文章了，不想让今年的文章数量挂零罢了。哈哈，我也终究不能免俗。   &lt;/p&gt;
 &lt;p&gt;不过你以为文章挂零是因为我这一年碌碌无为，所以年底了来这里抒发悔恨吗？错啦。恰恰相反，今年可以说是我最&lt;del&gt;赛博&lt;/del&gt;充实的一年了，以至于写文章成为了低优先级事项。有几篇文章一直没有结尾，还有不少新的文章的构思，但只能南望发布又一年了。   &lt;/p&gt;
 &lt;p&gt;其实这也和我的博客文章发布策略有关。早期我写文章都是通过 &lt;code class=&quot;language-text&quot;&gt;hexo new&lt;/code&gt;  然后编辑 &lt;code class=&quot;language-text&quot;&gt;md&lt;/code&gt; 文件，所以在网页上看到的时间其实是我开始写一篇文章的时间。而我写的又慢，所以有可能在 2024 年发布一篇 2023 年的文章。但现在改为了在笔记软件中写好，再导出 &lt;code class=&quot;language-text&quot;&gt;md&lt;/code&gt; 并添加元信息。这样文章的发布时间就是我写完它的时间了。不过 whatever，这不重要。明年要把写文章的优先级提高一些，不然还没写出来就过时了 orz   &lt;/p&gt;
@@ -2889,7 +3177,7 @@ draw() calls:        |   |   |   |   |   |   |&lt;/code&gt;&lt;span aria-hidden=
 &lt;p class=&quot;metadata&quot;&gt;知道你们好奇是哪棵树，但请不要对我充满强烈个人主观的审美体验抱有过高的期望&lt;/p&gt;
 &lt;br&gt;
 &lt;p&gt;那棵「好树」，大学毕业时我又回去看了它一次，今已亭亭如盖矣。我见证了它这几年的成长，正如同它见证了我的成长一样。褪去了初见时的青涩和稀疏，如今的它更加茂密且翠绿了，它依然是那棵「好树」。&lt;/p&gt;
-&lt;p&gt;它依然是一棵好树。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[4.22.23.06]]></title><link>https://maliut.space/p/4-22-23-06/</link><guid isPermaLink="false">https://maliut.space/p/4-22-23-06/</guid><pubDate>Mon, 22 Apr 2019 23:06:00 GMT</pubDate><content:encoded>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</content:encoded></item><item><title><![CDATA[第三方收发微信消息主流技术小结]]></title><description><![CDATA[一篇水文。最近因为需要去了解了一下如何通过第三方技术收发微信的消息，以至于实现一些更复杂的功能。由于微信实际上并没有开放这方面的 API…]]></description><link>https://maliut.space/p/wechat-crack/</link><guid isPermaLink="false">https://maliut.space/p/wechat-crack/</guid><pubDate>Sun, 03 Mar 2019 21:33:36 GMT</pubDate><content:encoded>&lt;p&gt;一篇水文。最近因为需要去了解了一下如何通过第三方技术收发微信的消息，以至于实现一些更复杂的功能。由于微信实际上并没有开放这方面的 API ，所以通俗来讲，就是研究了下如何破解微信的体系。&lt;/p&gt;
+&lt;p&gt;它依然是一棵好树。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[4.22.23.06]]></title><link>https://maliut.space/p/4-22-23-06/</link><guid isPermaLink="false">https://maliut.space/p/4-22-23-06/</guid><pubDate>Mon, 22 Apr 2019 23:06:00 GMT</pubDate><content:encoded>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</content:encoded></item><item><title><![CDATA[第三方收发微信消息主流技术小结]]></title><description><![CDATA[一篇水文。最近因为需要去了解了一下如何通过第三方技术收发微信的消息，以至于实现一些更复杂的功能。由于微信实际上并没有开放这方面的 API…]]></description><link>https://maliut.space/p/wechat-crack/</link><guid isPermaLink="false">https://maliut.space/p/wechat-crack/</guid><pubDate>Sun, 03 Mar 2019 21:33:36 GMT</pubDate><content:encoded>&lt;p&gt;一篇水文。最近因为需要去了解了一下如何通过第三方技术收发微信的消息，以至于实现一些更复杂的功能。由于微信实际上并没有开放这方面的 API ，所以通俗来讲，就是研究了下如何破解微信的体系。&lt;/p&gt;
 &lt;!--more--&gt;
 &lt;p&gt;大体的思路也比较好理解，就是通过微信的各个端入手来模拟。主流的做法大概有以下几种：&lt;/p&gt;
 &lt;h2&gt;Android 端 Hook&lt;/h2&gt;
