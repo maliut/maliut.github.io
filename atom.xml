@@ -1,4 +1,263 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Mの综合研究]]></title><description><![CDATA[somewhere about myself]]></description><link>https://maliut.space</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 14 Dec 2024 14:10:12 GMT</lastBuildDate><item><title><![CDATA[我为什么不再爱好摄影]]></title><description><![CDATA[…]]></description><link>https://maliut.space/p/why-i-give-up-photography/</link><guid isPermaLink="false">https://maliut.space/p/why-i-give-up-photography/</guid><pubDate>Sat, 31 Aug 2024 17:00:00 GMT</pubDate><content:encoded>&lt;p&gt;熟悉我的朋友会知道我在初中到大学前期喜欢摄影，那时还买过自己的单反相机，也参加过一些校内外的摄影活动。然而这份热情在之后却快速冷却下来，不仅相机长期吃灰，现在即使出去玩，也懒得拍一张游客照。&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Mの综合研究]]></title><description><![CDATA[somewhere about myself]]></description><link>https://maliut.space</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 22 Dec 2024 16:50:21 GMT</lastBuildDate><item><title><![CDATA[王国之泪：再而衰]]></title><description><![CDATA[…]]></description><link>https://maliut.space/p/totk/</link><guid isPermaLink="false">https://maliut.space/p/totk/</guid><pubDate>Fri, 13 Dec 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;我非常喜欢《塞尔达传说 旷野之息》，要说它是我心中的历史最佳游戏也不过分。因此当它的续作《塞尔达传说 王国之泪》发布后，我毫不犹豫就购买了。&lt;/p&gt;
+&lt;p&gt;毋庸置疑，《王国之泪》也是一个好游戏，但有《旷野之息》珠玉在前，《王国之泪》的一些设计还是让我失望，也有一些槽点让我不吐不快。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;先来聊聊游戏优秀的部分。在继承了前作地图和整体框架的基础上，本作大胆创新，新能力的加入大大拓宽了游戏的玩法边界。对于像我这样看惯了现在各类同质化玩法的游戏玩家来说，《旷野之息》的能力已经让我震惊了一次：“什么，还能这样？”，而《王国之泪》让我感到的则是：“什么，还有高手？”&lt;/p&gt;
+&lt;p&gt;“究极手”，是前作磁铁能力的完全上位替代。前作中我们有时会觉得“要是这里也可以吸就好了”，但我们也清楚，限制的存在是谜题设计所必需的，要是所有物体都可以随意操纵，谜题失去了难度也会失去乐趣。结果本作真的就把能力开放了出来，不仅可以操作任意物体，还可以把它们自由组合起来。虽然被吐槽谜题设计的水准有所降低，但走向了《围攻》的路线，把整个游戏变成了一个大型的游乐场。&lt;/p&gt;
+&lt;p&gt;“余料建造”，不仅将前作中各种鸡肋的掉落物变废为宝，还丰富了战斗的套路和趣味性，同时体现出开发组恐怖的堆量能力。&lt;/p&gt;
+&lt;p&gt;“通天术”，源自游戏开发和测试过程中的能力。和“究极手”一样，初看会让人觉得是不是过于变态了。但实际玩起来，除了能够体验到基于它衍生出的各种谜题和 Y 轴探索外，还能意识到，它组成了本作中洞穴探索玩法里不可或缺的一环。&lt;/p&gt;
+&lt;p&gt;“倒转乾坤”，和前作的时停类似的时间系能力，不必多说，上限取决于玩家的想象力。&lt;/p&gt;
+&lt;p&gt;此外，前作 DLC 中的特殊道具和装备，这次也直接打包塞进了游戏本体中。总的设计思路，就是尽量解除给玩家的各种限制，不怕你们把游戏玩坏，只怕你们玩的不够爽。&lt;/p&gt;
+&lt;p&gt;关于这些优点，前人之述备矣，这里就不展开了，接下来我想谈谈那些让我觉得失望的点。&lt;/p&gt;
+&lt;h2&gt;“退而求其次”的 POI 设计&lt;/h2&gt;
+&lt;p&gt;POI (Point of interest) 此处主要指的是神庙和塔（鸟望台）的位置。《旷野之息》的开发者访谈提过，游戏的地图基于京都的真实地图设计，并利用三角法则等摆放各个重要地点的位置，以确保玩家在游玩过程中，时刻都能找到吸引人前去探索的点。&lt;/p&gt;
+&lt;p&gt;简单来说，就是神庙和塔的位置都不是乱放的，而是经过精心设计的。《王国之泪》继承了前作的地图，但设定上左那乌科技取代了希卡科技，那么这些位置就必然需要发生变更，也意味着它们必然要远离前作中精心设计过的、理想的点位。&lt;/p&gt;
+&lt;p&gt;在实践中，开发组把很多神庙藏进了洞穴中。一方面是为了让玩家有动力探索本作重点开发的洞穴地形，另一方面，也是因为地面上没有更多能放神庙的好位置，而不得不做出的无奈之举。但这样相当于减少了地面上 POI 的数量，使三角法则失效，也连带着降低了玩家（尤其是新玩家）在地面的探索乐趣。&lt;/p&gt;
+&lt;p&gt;还有一部分神庙，主要是作为村庄、驿站的传送点存在。它们绝大多数的位置都比前作更不方便了。甚至为此大精灵之泉也被迫移了位置。而前作那些一看就浑然天成，很适合摆放神庙的位置，在本作中只能另作它用，甚至直接空在那里，也让人感到一丝尴尬。&lt;/p&gt;
+&lt;p&gt;虽然本作继承了前作的地图，但为了提升老玩家的新鲜感，势必要对原有的地图做一些改动。除了本作新增的空岛、地底和洞穴系统外，对地面的改动中，我最喜欢的是经格鲁德峡谷前往沙漠的道路，由于天地异变导致原有道路积水难行，人们从岩壁处新开辟出了一条曲径通幽的道路&lt;del&gt;，充分体现了劳动人民的智慧&lt;/del&gt;。其他就没有什么印象深刻的了。地面绝大多数的变化，还是新增了很多从天而降的落石碎片，以及瘴气。虽说符合剧情设定，但也让原本充满美感的旷野丑陋了不少。&lt;/p&gt;
+&lt;h2&gt;好奇心不再得到奖励&lt;/h2&gt;
+&lt;p&gt;不同于其他开放世界游戏，用一堆任务和 checklist 牵着玩家走，《旷野之息》的优点之一，就是在剧情上使用弱引导，而通过精巧的地图设计去激发玩家的好奇心和主观能动性。机制上也给予玩家充分的自由度，不会因为游玩的先后顺序导致卡关，还会针对不同的剧情进度设置各种不同的 NPC 对话，增强了世界的真实感。可以说，在《旷野之息》中，每个玩家的通关经历都构成了一部独一无二的冒险故事。&lt;/p&gt;
+&lt;p&gt;《王国之泪》虽然大体继承了前作的这套设计，但在强化了剧情内容的同时，也难以避免对探索的自由度产生了影响。更令人失望的是设计者似乎没有对玩家远离主线的行动做出完整的应对。&lt;/p&gt;
+&lt;p&gt;从初始空岛下来以后，几乎所有的 NPC 都在引导你赶紧前往利特村，好像下一秒村子就要完蛋了一样。由于引导实在太过于赤裸裸，不禁让人害怕，要是不按引导走，是不是游戏就进行不下去了。&lt;/p&gt;
+&lt;p&gt;不幸的是，我担心的事情真的发生了。虽然我不爱循规蹈矩地走大路，但也没有逆反到非得对着引导干的地步。因此我没有错过龙之泪的剧情，也没有错过和伯库林的第一次见面。但是当我来到利特村所在地区的鸟望台时 —— 来到一个新的地区，首先就想去开塔，我想这是一件很多玩家都会做的事 —— 一下子就被不远处的一堆乱石吸引了目光。看似只是一堆杂乱无章的装饰，但倘若将它们看作落脚点，则似乎隐隐约约能看到一条螺旋上升的通道。&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 810px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/163636295419d607d2f659f07c81818f/21b4d/1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.15763546798029%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB+0lEQVQozyWQa5KbMBCEOU5OkB9JdpOtjdfGYIwB8xZmDZiHAAkJYcD7yBFyuBwoQ7nq+yV1T/eM9OWfmWL56CmysdKsrY30ILGii5PhE3Cp4wzHUeZaaGeFC6avHvyt4StmoEror9dGWz1QVWut28ox1O4i93SIUhclthPpoNs7a8PfHsHsKXenc9Ildq3EjMFjo70ZaDDYDBcMT3Ejw4kODtoDsv70LH9Tjd+mr1jBDpxQUOqmuuqSMHUcdDD9HYyEvyXK3lieaod7zdps909r5WElf1+rj26k+7ERpc65QtL0KdjUZvVrmCz+I4R7KtTeWSvNXGnHl1/PX1ebh7X8w7BlFx0Q2IqwaF8rlknzn2H86MlQ500S50GY2NAWVljWC1TNelF3Py1XMZ2thww4YUXTti+JqFpRSuAE+hul1wbzPCdnUCQliosguiwHQ6/HNA+LKm7YhU9NP7cAHwnopfFTDB8czN3UkmsNFSgw1uSKYXwHL5DDci7w9UbFWze8Mzo0oOEzWZLFOwMzmwkdGzJggI4tmwhIl1IT4aLmoulH0t8IJnmQld750gpI/hDijd2d7YDrvqz7AmLp1PAbHeAL3lm+TLzWWRmHke+eSz8p6EikfuZ8pt28dG7gDAO+A1uwGfJbInDDCswvQFqeGl52I+2GBr7+A9qw/3wzB3vzAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;1&quot;
+        title=&quot;1&quot;
+        src=&quot;/static/163636295419d607d2f659f07c81818f/d7542/1.png&quot;
+        srcset=&quot;/static/163636295419d607d2f659f07c81818f/2efce/1.png 203w,
+/static/163636295419d607d2f659f07c81818f/1d180/1.png 405w,
+/static/163636295419d607d2f659f07c81818f/d7542/1.png 810w,
+/static/163636295419d607d2f659f07c81818f/d56b5/1.png 1215w,
+/static/163636295419d607d2f659f07c81818f/21b4d/1.png 1280w&quot;
+        sizes=&quot;(max-width: 810px) 100vw, 810px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;metadata&quot;&gt;通往天空的连绵岛屿&lt;/p&gt;
+&lt;p&gt;不得不说这段场景的设计实在是太出色了。利用看似杂乱无章，实则经过了精心设计的路线拾级而上，仅用自己的双脚就来到了万米高空，随后从风暴眼一跃而下，一艘巨大的天鸟船映入眼帘。初次见到这个场景，相信无人不会为之震撼。&lt;/p&gt;
+&lt;p&gt;然而就当我准备大展拳脚之时，走上正中的交互点，迎接我的却是一个大大的红叉。我心中顿感不妙。不过我并不信邪，“毕竟这可是任天堂啊”，不可能就这么让我空手而归，一定是我还有什么地方没注意到吧。怀揣着这样的心思，我开始了在神殿的解谜。但无论我对着任何看上去可能可以交互的物体上蹿下跳，都始终找不到任何能够推进进度的契机。直到我忍不住查了攻略才知道，这些机关需要贤者的技能才能够交互。&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 810px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/34b46086f5ff88bc896b00c6f3b521ee/21b4d/2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.15763546798029%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACkUlEQVQozw3OWU/aAAAA4P6gHdEJOG/kainWSksBKS2Uq1huBKETKIccgsC4hqgEdDqGbmyJWXQvm8li9g/2spcle9vL9g/mL/g+wDQ8o99eMu8/2ibXlvGEGl2ZBqebr+qW/qHnqLn9Mh2sJNg8b8jwukbV0Ovqjw6piwvX5IP9zRkgDYVVuwm4VCZ6J/To0jp+Rw6HVG1PaCaPu/yo4Xtd9/SqXCLHMdko0WkSnRY56NvHI/ugC4j02mdGfIY0ztoYRWxH3+1S/X6iujuucZOyY1B2n9a46yo9qjsyJa85vW2q5dlBg2yVre0ygGy7lVtmpYeWed3KoA+vVJiD4nnBcZvDv6bV90XkvGQfFJmroqmz7wonHfYS7z4+IEoCVckCxlwcS/m1qRBREDAhSlSKob34lxzxLYfeJxd+5sS/8rJOkY2l3S2B5JOMMxPwHFaYas5SyQAbESfGcyjvgWMcGOHWEmEy4mzGTPUgInhld3noT36qn7fSqWA7sSnESDbliQ3qoZOKu1UCIKcR9lge5iq3Wc3Rii0a58jhC13curhjf2Cf/BamPwk6PumMenHWtUEHzP5G1lkVqL04IKXwFYtxidLJrbiMwsQYtKQHe355lpllbfM30Zl+QJ72oXVO5XOsYTZM5zZYkgFTnDOEXcC8ARFhGjGOzBuR50ZYhEMS9SKtW9hh5ZwPZBnQQIJ+h2J/S26zwagZBukNNUtqHHqIRgEJjswZtCIUlqxJ12kd6zI0fPDniKzgXQ2H4VYQ7rCr7SCU9K6ZGXhVKxMj0qew9DG48kg1B0gQqVSnVKHLNAUVfMRddvNvm/jX0vwoQbe74HcBvuGRHKuxUhCBq2AUXICW59YVU6h6GkP/A3BzHTPz97ZUAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;2&quot;
+        title=&quot;2&quot;
+        src=&quot;/static/34b46086f5ff88bc896b00c6f3b521ee/d7542/2.png&quot;
+        srcset=&quot;/static/34b46086f5ff88bc896b00c6f3b521ee/2efce/2.png 203w,
+/static/34b46086f5ff88bc896b00c6f3b521ee/1d180/2.png 405w,
+/static/34b46086f5ff88bc896b00c6f3b521ee/d7542/2.png 810w,
+/static/34b46086f5ff88bc896b00c6f3b521ee/d56b5/2.png 1215w,
+/static/34b46086f5ff88bc896b00c6f3b521ee/21b4d/2.png 1280w&quot;
+        sizes=&quot;(max-width: 810px) 100vw, 810px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;metadata&quot;&gt;除了一个代表拒绝的红叉，没有任何交互和提示&lt;/p&gt;
+&lt;p&gt;我只能悻悻地回去解锁完前置任务，再带着贤者前来，但已经失去了初见的震撼。即使有了贤者之力的加持，也还失误了几次。这还是那个奖励玩家好奇心的任天堂吗？如果不查攻略，我恐怕还在神殿内部鬼打墙呢。你用精妙的引导和优秀的地图设计让玩家来到这里，却不愿意给一段剧情，甚至一个提示。甚至连个传送点都不给。&lt;/p&gt;
+&lt;h2&gt;剧情的不用心&lt;/h2&gt;
+&lt;p&gt;我们尚可以为主线的强引导辩解几句，因为确实有许多玩家在弱引导下会丧失目标感，控制玩家早期的游玩动线，是为了尽早把所有的主线和机制展现出来；而参与一次解锁神殿，也可以为后续的游玩流程打个样。但为什么开发者选择了风神殿作为流程中的首个呢？&lt;/p&gt;
+&lt;p&gt;我们当然可以为此找到理由，例如去风神殿的路上怪物强度相对较低，并且风神殿的 boss 是机制杀，不需要玩家有较多的资源。但这难免有倒果为因之嫌。考虑到大多数玩家都觉得风神殿是印象最为深刻、综合表现最为出色的神殿，我们可以阴谋论地认为，开发组就是希望把最好的内容最早地呈现在玩家眼前。&lt;/p&gt;
+&lt;p&gt;当玩家完成了风神殿，看着古代贤者讲述以前的故事时，恐怕没人能想到，一模一样的故事，他们还要再看三遍。&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 810px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/15c6d3718aab0bd44786420e5b4630b5/eea4a/3.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.15763546798029%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQCAwX/xAAXAQADAQAAAAAAAAAAAAAAAAAAAQID/9oADAMBAAIQAxAAAAHWqmnnL4iM/8QAGxAAAgIDAQAAAAAAAAAAAAAAAAEDEQIhIzH/2gAIAQEAAQUCbojyo5kuohef/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGRAAAgMBAAAAAAAAAAAAAAAAARAAERIh/9oACAEBAAY/AodG1x//xAAaEAACAwEBAAAAAAAAAAAAAAAAAREhUTFx/9oACAEBAAE/IZs3A1G1mmlZdHJ9GY//2gAMAwEAAgADAAAAENTf/8QAFhEAAwAAAAAAAAAAAAAAAAAAEBFB/9oACAEDAQE/EFR//8QAFhEBAQEAAAAAAAAAAAAAAAAAERAh/9oACAECAQE/EHSf/8QAGxABAAICAwAAAAAAAAAAAAAAAQARITFRYaH/2gAIAQEAAT8QKiIFsb3a9NdSkATlmceqj2AYSHC2f//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;3&quot;
+        title=&quot;3&quot;
+        src=&quot;/static/15c6d3718aab0bd44786420e5b4630b5/627f4/3.jpg&quot;
+        srcset=&quot;/static/15c6d3718aab0bd44786420e5b4630b5/efcb5/3.jpg 203w,
+/static/15c6d3718aab0bd44786420e5b4630b5/02e66/3.jpg 405w,
+/static/15c6d3718aab0bd44786420e5b4630b5/627f4/3.jpg 810w,
+/static/15c6d3718aab0bd44786420e5b4630b5/78959/3.jpg 1215w,
+/static/15c6d3718aab0bd44786420e5b4630b5/eea4a/3.jpg 1280w&quot;
+        sizes=&quot;(max-width: 810px) 100vw, 810px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;metadata&quot;&gt;一模一样的剧情重复四次，古代贤者毫无前作四英杰的鲜明个性&lt;/p&gt;
+&lt;p&gt;无论是主观上不用心也好，还是客观上产能不足也罢，目前的神殿支撑不起前作那四段有血有肉的剧情了。&lt;/p&gt;
+&lt;p&gt;要说剧情，本作中重点刻画的是龙之泪剧情。龙之泪剧情本身没得说，但它过于独立，与其他剧情较为割裂的问题也受到较多诟病。玩家在游戏早期就可以在忘却神殿看到全地图所有的龙之泪位置，龙之泪的地面花纹也足够显眼，玩家往往在前中期就能大致猜测到公主的去向。然而龙之泪剧情线中的林克和其他主线中的林克就好像精神分裂了一样。在其他主线中，林克看到所有 NPC 为了找公主而被耍的团团转，却一言不发。直到游戏后期快打 boss 了，两条剧情线才交汇到一起。&lt;/p&gt;
+&lt;p&gt;和前面风神殿的问题一样。塞尔达系列所具有的“根据不同的剧情进度有不同的对话”这一优点，常被大家褒奖为“老任好细”，甚至将其用作评判开放世界真实性的标准。但至少在这几个问题上，开发组做的是不合格的。&lt;/p&gt;
+&lt;p&gt;还有一个被广为诟病的问题是对希卡科技的交待。从游戏设计的角度，我完全可以理解为了给新内容让位，必须要让希卡科技和建筑退出。但《王国之泪》在剧情上承接了《旷野之息》的时间线，希卡科技曾经遍布整个世界，在物理上的消失可以从设定上解释，但在 NPC 们口中、心中的消失，难道希卡科技还有大记忆消失术的功能吗？&lt;/p&gt;
+&lt;h2&gt;敷衍的地底世界&lt;/h2&gt;
+&lt;p&gt;四贤者体现了剧情的敷衍与同质化。然而同样同质化的不止是剧情。&lt;/p&gt;
+&lt;p&gt;神庙是游戏里注水比较严重的。这个问题其实在《旷野之息》中就已经初见端倪。当你好不容易发现一个神庙，兴致勃勃准备迎接挑战时，却发现是个奖励神庙，就好像一盆冷水当头浇灭了你的热情。&lt;/p&gt;
+&lt;p&gt;《旷野之息》中这样的神庙还是少数，考虑到有 120 个神庙需要设计谜题，偶尔塞几个也无可厚非。但在《王国之泪》中，这样的奖励神庙数量却大大增加了。或许有人会说，之所以是奖励神庙，是因为发现神庙的过程本身就是一种挑战。有些神庙确实是这样，但更多的所谓挑战，拜托，只是藏的比平时深了一点罢了。哪怕你不塞神庙挑战，我逛街也会逛到这儿。&lt;/p&gt;
+&lt;p&gt;从《旷野之息》的 DLC 来看，开发组并不缺乏设计出高质量神庙的能力 —— 从发现神庙、到达神庙，再到解开神庙，都是谜题的一部分。《王国之泪》的神庙现状，只能说是出于工作量或其他因素考虑，被有意缩水了。&lt;/p&gt;
+&lt;p&gt;还有很多人提到空岛的同质化。初始空岛是游戏里最大，也是内容最丰富的空岛。其余的空岛数量和体积都比较小，并且还有很多【神庙+扭蛋机】的同类型、中转站性质的空岛。不过，在空岛的问题上，我还是想稍微为开发组辩护一下。&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 810px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/1ce07d7432c031b2816290aa91813723/eea4a/4.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.15763546798029%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBP/EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/aAAwDAQACEAMQAAABx0z1QQUt/8QAGRABAAIDAAAAAAAAAAAAAAAAAQAxAhAR/9oACAEBAAEFAiuTKx0z/8QAFREBAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQMBAT8Bp//EABYRAAMAAAAAAAAAAAAAAAAAAAEQEf/aAAgBAgEBPwGFf//EABQQAQAAAAAAAAAAAAAAAAAAACD/2gAIAQEABj8CX//EABgQAQEBAQEAAAAAAAAAAAAAAAEAEVEh/9oACAEBAAE/ISRHduBJh7aydv/aAAwDAQACAAMAAAAQ4A//xAAXEQADAQAAAAAAAAAAAAAAAAAAASER/9oACAEDAQE/EMqCp//EABcRAAMBAAAAAAAAAAAAAAAAAAARITH/2gAIAQIBAT8QdTIf/8QAGRABAAMBAQAAAAAAAAAAAAAAAQARITFB/9oACAEBAAE/EO2bdNw+g8cgTKiQqdVDZuO2z//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;4&quot;
+        title=&quot;4&quot;
+        src=&quot;/static/1ce07d7432c031b2816290aa91813723/627f4/4.jpg&quot;
+        srcset=&quot;/static/1ce07d7432c031b2816290aa91813723/efcb5/4.jpg 203w,
+/static/1ce07d7432c031b2816290aa91813723/02e66/4.jpg 405w,
+/static/1ce07d7432c031b2816290aa91813723/627f4/4.jpg 810w,
+/static/1ce07d7432c031b2816290aa91813723/78959/4.jpg 1215w,
+/static/1ce07d7432c031b2816290aa91813723/eea4a/4.jpg 1280w&quot;
+        sizes=&quot;(max-width: 810px) 100vw, 810px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;metadata&quot;&gt;除初始空岛外，其余的大型空岛数量寥寥&lt;/p&gt;
+&lt;p&gt;探索天空世界是本作开发时一个重要的想法和前提，设计师并不缺乏空岛上玩法的各种点子。反倒是随着空岛数量的不断变多，被嫌弃天空看起来很脏。因此空岛的设计实际上是开发人员的创作热情被设计要求所抑制的结果&lt;sup&gt;[1]&lt;/sup&gt;。另外，以现在的地图设计，倘若不依赖于 MK2 等通用飞行器，而是利用场景中提供的机关和道具去到达各个空岛，也不乏挑战性和乐趣。换句话说，空岛地图是经过精心设计，有其设计意图和合理性的。&lt;/p&gt;
+&lt;p&gt;反观地底世界，才是整个游戏敷衍的代表，最大的败笔。&lt;/p&gt;
+&lt;p&gt;诚然，讨厌地底世界，有我主观的成分。地底世界阴暗、恐怖、充满危险。《旷野之息》以其清新、淡淡的油画般的画风吸引了像我一样的玩家群体。即使早已通关，我也愿意回到游戏世界，哪怕什么都不做，只是闲逛，欣赏风景。甚至有人专门研究怎么通过卡 bug 等方式去除 HUD，只为了给《旷野之息》做旅游宣传片。而《王国之泪》的地底世界天然就在这些特点的对立面，让人一开始就消灭了探索的欲望。&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 810px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e0b0afa19f32dc9e0135da615959e1ee/21b4d/5.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.15763546798029%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACNUlEQVQozxWOyXLaQABEVSwS2kczo33QDmKzWAaEACHAGLAJwYe4klT5//8jStU79utupk/HX7fivRi+r9LlS5zEJA4cyTQ4w+Ati9N1FkEOY96x4Xoph4FMXNX3YORbacLMzrT4EXTHIUmJRiweax2ocgiyGP83odZSpJYqsxiB80nuJ7yhK12CQl/zCZOdV9XnVo1cEFiya3YwbKlKW1M5qLFArc2mKDYVidUAoAt1U8iuoxFHtC1W15nsNU9XLzC0QVcHxBZ0XDsdqPEIyq7OArkhiU1R4Ou3+VJa54LncXWmrkaIiTcZSgiKHM0zJBN3IGjIck09pcdEMbWGIDT4DmtZ0oLqqzkK3SbCbaC0gMIM9ktrFOq9Lo4cxcasqnCCwEtiW5HrC01BaHJcm+fbsiRnmVqspcDviEJbUWqYYUWtgQcDUw8duxcA23AtwzMNzTDbkghN4AQEQKQRWzlW4q5Aw6EsSRioQFWZcDXWY9cZR1ZE3MjrzV7y62V+rOjp4I8i0rNTStPF0puMpMcdHvaoF2I/xKatQcB0Zz13koR0lCyGpB/k19Pu+dg9HsXHR49OwyzJcjqbz78/btr1HN+vk80WTs/SoERewAz3dH2/lJ/349fz8OtJr2/r91tW7WenKqazMEuzYjXf5Kt9Ea7psiz6i6U6eQXTS3c0ZrbP2+X77+uf37vPZ/H4OT+/ZdUxzfPxdjMpd4PaPFTTshzkeTSbdEeplfjjbTk9X6eH8h9n+VZTFmIZDwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;5&quot;
+        title=&quot;5&quot;
+        src=&quot;/static/e0b0afa19f32dc9e0135da615959e1ee/d7542/5.png&quot;
+        srcset=&quot;/static/e0b0afa19f32dc9e0135da615959e1ee/2efce/5.png 203w,
+/static/e0b0afa19f32dc9e0135da615959e1ee/1d180/5.png 405w,
+/static/e0b0afa19f32dc9e0135da615959e1ee/d7542/5.png 810w,
+/static/e0b0afa19f32dc9e0135da615959e1ee/d56b5/5.png 1215w,
+/static/e0b0afa19f32dc9e0135da615959e1ee/21b4d/5.png 1280w&quot;
+        sizes=&quot;(max-width: 810px) 100vw, 810px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;metadata&quot;&gt;地底的 90% 都是这么一个样子&lt;/p&gt;
+&lt;p&gt;除了个人偏好的因素，地底世界从游戏设计的角度也令人诟病。地底世界主打的特色是反转、对称，想必大家在实际游玩后不久就可以发现。例如地上地势高对应地下地势低，地上的河流对应地下的墙壁，地上的神庙对应地下的树根等等。&lt;/p&gt;
+&lt;p&gt;或许在我们刚开始发现这样的对应关系时，会有一种惊喜的感觉。但随着游戏的进行，再仔细想想，这样的对应关系有必要吗？有助于提升游戏的乐趣吗？&lt;/p&gt;
+&lt;p&gt;不得不承认有些对应关系还是非常合适且合理的。例如河流对应墙壁、岩浆对应温泉，既符合常理，又丰富了地底的环境。但整个地底世界的地势完完全全是地面地势的反转，根本就不是一件科学的事。&lt;/p&gt;
+&lt;p&gt;同样是“位于地表下方的空洞”这一概念，洞穴的设计和地底形成了鲜明的对比。本作中洞穴也几乎遍布了整个游戏地图，但在不同的区域，洞穴也有不同的特点，例如有的干燥，有的湿润，有的明亮，有的阴暗，有的还可以作为连接两个看似不相关区域的秘密通道。&lt;del&gt;除了有些为了硬塞魔犹伊导致的套路化洞口，&lt;/del&gt;游戏的各处洞穴可谓是丰富多彩，在洞口间的穿梭让人意料之外，看到地图后却又感到情理之中，并不给人以同质化的观感。&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 810px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/ddfbbecad0c3926ead60ec0dcdb116f3/eea4a/6.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.15763546798029%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIBAwT/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/2gAMAwEAAhADEAAAAaXzjiBSf//EABsQAQACAgMAAAAAAAAAAAAAAAECEQADEhMh/9oACAEBAAEFAuvw05IqVvGEkbV//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGBAAAwEBAAAAAAAAAAAAAAAAAAExECH/2gAIAQEABj8CyC6UbZ//xAAYEAEBAQEBAAAAAAAAAAAAAAABEQAhMf/aAAgBAQABPyG5U93kyi81wxaywVOstit3/9oADAMBAAIAAwAAABAn3//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAECAQE/EIf/xAAZEAEBAQEBAQAAAAAAAAAAAAABEQAhUUH/2gAIAQEAAT8QEnRwZ9msiGACCzI3CPTxzcjnuccB45hKuq7/2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;6&quot;
+        title=&quot;6&quot;
+        src=&quot;/static/ddfbbecad0c3926ead60ec0dcdb116f3/627f4/6.jpg&quot;
+        srcset=&quot;/static/ddfbbecad0c3926ead60ec0dcdb116f3/efcb5/6.jpg 203w,
+/static/ddfbbecad0c3926ead60ec0dcdb116f3/02e66/6.jpg 405w,
+/static/ddfbbecad0c3926ead60ec0dcdb116f3/627f4/6.jpg 810w,
+/static/ddfbbecad0c3926ead60ec0dcdb116f3/78959/6.jpg 1215w,
+/static/ddfbbecad0c3926ead60ec0dcdb116f3/eea4a/6.jpg 1280w&quot;
+        sizes=&quot;(max-width: 810px) 100vw, 810px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;metadata&quot;&gt;美丽的水晶蘑菇洞。不同区域的气候环境也孕育着不同风格的洞穴&lt;/p&gt;
+&lt;p&gt;而地底世界，最大的问题就是其照搬地面的地形本身。无脑的反转地形导致地底充满了各种突兀的、完全不可能出现在现实中的奇怪地势转折，毫无设计感可言。又由于地形是反转而来，玩家在熟悉了地面的地形后，不用探索就能想象的到对应地底的样子，进一步减少了探索的欲望。又由于只反转了地形，地面上的树林、草原、雪山、海洋……各种丰富的地貌，在地底都变成了只有光秃秃的惨绿色的岩石、诡异的蕨类植物、和瘴气，更进一步减少了探索的欲望。&lt;/p&gt;
+&lt;p&gt;还有一些对应关系，或许从剧情设定上合理，但在游戏设计上并不合适。说的就是神庙和树根的对应关系。同样作为神圣能量的来源，两者相互对应确实合理。但神庙作为地面上数量有限的探索资源，是非常宝贵的。游戏鼓励玩家探索，并设置了很多宝箱、Yahaha 等作为探索的奖励。而神庙无疑是奖励中最高的那一档。在游戏后期遇到神庙，我是既开心又失落，开心于我的探索得到了回报，失落于游戏的剩余未知内容又少了一些，离游戏结束又近了一分。&lt;/p&gt;
+&lt;p&gt;而树根的加入毁了这一切。不同于很多神庙藏在深山老林，发现时非常有成就感，寻找树根简直太容易了。在一片漆黑的地底，一个树根就是天空中最亮的那颗星。不仅如此，树根还承担了地面上鸟望台的功能，用来开启地图的迷雾。而树根点亮的范围是固定的圆形。再考虑到地下的特殊区域，例如独立的小岛等，也必须被点亮，也就是说，即使肉眼没有看到树根，我们也可以很轻易地推测出下一个树根的位置。&lt;/p&gt;
+&lt;p&gt;这样的设计就导致，如果你是地面地下同步游玩，往往点亮树根的进度会比解锁神庙的进度提前很多。但树根的位置又和神庙一一对应，当你回到地面，哪怕是还没探索过的区域，神庙的位置也已是明牌。这样一来，发现神庙所带来的不再是令人激动的体验，而只是完成任务罢了 —— 就像我们不屑的其他 checklist 式开放世界游戏一样。&lt;/p&gt;
+&lt;p&gt;我们都知道，在游戏开发中，点子是最廉价的。可能刚开始觉得很有意思，但实际做进游戏，玩起来就又是另一回事了。所谓地面与地底的对应关系就是如此。开发组不可能不知道这个道理。即便如此仍然要这样做，并不是真的觉得这样的设计很精妙，而是另有原因。&lt;/p&gt;
+&lt;p&gt;在开发者访谈中提到，与空岛不同，地底世界并不是一开始就决定制作的。并且在决定采用与地面反转地形的设计后，地底的制作可以通过程序自动化的方式生成，无需花费大量时间和精力，这也帮助它避免了被叫停开发，最终得以面世&lt;sup&gt;[2]&lt;/sup&gt;。&lt;/p&gt;
+&lt;p&gt;换句话说，选择反转地形，并没有多少是出于游戏设计上的考量，而主要是为了节省工作量。&lt;/p&gt;
+&lt;p&gt;但代价是什么呢？程序生成，通常会用在沙盒 / roguelike 等允许重复游玩的游戏类型中，为了让每一次游玩都有独一无二的体验。而本作与这些游戏类型并不沾边。在&lt;a href=&quot;/p/how-to-find-yahaha&quot;&gt;前一篇《旷野之息》的文章&lt;/a&gt;中我们就已经提到过，它之所以优秀，就是因为它的整个世界都是经过精心设计的，和其他套路化的游戏不一样。而本作的地底世界，既然选择了偷懒，那质量的下降也是咎由自取。&lt;/p&gt;
+&lt;p&gt;那么，这样一个偷懒的地底世界，又该如何吸引玩家呢？本来，倘若下笨功夫，往地底堆大量的内容，靠量大管饱征服玩家，也不失为一种诚意。但既然已经决定地底以节省工作量为宗旨了，开发组又怎么可能愿意这么做呢？&lt;/p&gt;
+&lt;p&gt;从明面上讲，开发组设计了一套天空-地面-地底的循环机制，在天空获取向阳草和藏宝图，在地面获取光亮花，有助于探索地底；而地底可以获取电池和强力武器装备，又有助于探索地面和天空；地底战斗较为硬核，也鼓励了玩家去解锁地面神庙提高自身精力和血上限。由此，玩家不会长久呆在同一个地方，而是在三层地图中不停切换，同步探索。&lt;/p&gt;
+&lt;p&gt;但仔细思考这个循环，就会发现循环中真正值得探索的只有地面和天空。地底虽然也有像火神殿、第五贤者、魔人像之类的少数大型任务，但绝大多数的内容还是打怪、收集武器装备、采矿、采烟雾蘑菇和炸弹花。在这套循环中，地底扮演的是资源提供者的角色。但这些资源就非得放在地底吗？只是开发组决定将它们放在地底。只怕不放在地底，地底就显得可有可无了。&lt;/p&gt;
+&lt;p&gt;地底是如此的无聊与同质，以至于只能塞资源来解决玩家没有动力探索的问题。&lt;/p&gt;
+&lt;p&gt;地底中最重要的资源是矿石，矿石服务于游戏的核心玩法。游戏鼓励玩家使用“究极手”能力拼装各种左那乌装置，但生成装置和装置运行的电量消耗，都需要矿石补充。越高级、越复杂的装置，需要的矿石就越多，但持续时间往往很有限。因此，为了玩得爽，就需要玩家源源不断地采集矿石。&lt;/p&gt;
+&lt;p&gt;有很多玩家吐槽过这种采集几小时，爽玩几分钟的游戏体验，甚至在爽完过后选择读档。《王国之泪》的几种新能力，给了玩家更高的自由度，能看出开发组也是希望玩家可以充分发挥创造力，爽玩的，但偏偏在矿石和电量这种地方卡着玩家。明明只要调整一下数值，就可以改善玩家的体验。&lt;/p&gt;
+&lt;p&gt;比起堂堂正正地在地底堆量，开发组选择了将地底变成一个无趣、但足够消磨玩家时间的刷刷刷游戏。&lt;/p&gt;
+&lt;p&gt;也不是说刷刷刷不好。喜欢玩刷刷刷游戏的也大有人在。可就像我玩《Cookie Clickers》也可以很上头，但我不会拿它去评选年度游戏一样，这可是《塞尔达》系列！可是要成为游戏设计教科书的存在！要么不做，要么做好，何至于用这种手段来应付玩家，强行拉长游戏时间呢？&lt;/p&gt;
+&lt;p&gt;联想到地底世界在游戏的前期宣传中几乎没有露面，官方的口径是希望保守秘密待玩家自己去发现。但在这个酒香也怕巷子深的年代，假如地底世界真的像官方所说，“设计了相当丰富的玩法”；假如地底真的和它的面积一样，拥有和地表世界同样的内容体量……作为一个“大型 DLC” 却比前作还卖的贵一个档次的作品，官方难道不会将其作为一个重要的卖点大肆宣传吗？不妨小小阴谋论一下，恐怕官方对此守口如瓶，也算是有点自知之明吧。&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;虽然这篇文章充满了大量对《王国之泪》的抱怨，但这些只是我的集中吐槽。总的来说，《王国之泪》仍然是一部非常优秀的作品。无论你之前是否玩过《旷野之息》，你都不能错过《王国之泪》。&lt;/p&gt;
+&lt;p&gt;只是，如果说《旷野之息》是艺术品，《王国之泪》就是一部优点和缺点同样突出的作品。由于继承了《旷野之息》的世界观和场景，很多问题其实难以避免，很难有完美的做法。或许本作如果是一个完全新作会变得更好，我也依然相信任天堂在未来能够拿出更加出色的作品。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;[1] &lt;a href=&quot;https://www.nintendo.com/hk/interview/totk/03.html&quot;&gt;開發人員訪談: 薩爾達傳說 王國之淚｜任天堂&lt;/a&gt;&lt;br&gt;
+[2] &lt;a href=&quot;https://zhuanlan.zhihu.com/p/655839219&quot;&gt;《塞尔达传说 王国之泪》Fami 通万字专访&lt;/a&gt;    &lt;/p&gt;</content:encoded></item><item><title><![CDATA[我为什么不再爱好摄影]]></title><description><![CDATA[…]]></description><link>https://maliut.space/p/why-i-give-up-photography/</link><guid isPermaLink="false">https://maliut.space/p/why-i-give-up-photography/</guid><pubDate>Sat, 31 Aug 2024 17:00:00 GMT</pubDate><content:encoded>&lt;p&gt;熟悉我的朋友会知道我在初中到大学前期喜欢摄影，那时还买过自己的单反相机，也参加过一些校内外的摄影活动。然而这份热情在之后却快速冷却下来，不仅相机长期吃灰，现在即使出去玩，也懒得拍一张游客照。&lt;/p&gt;
 &lt;p&gt;反倒是从微信朋友圈出现之后，我观察到朋友圈里出现了越来越多的摄影爱好者。当然这很容易理解，只是不禁让我自我怀疑：难道我的特性是唱反调吗？&lt;/p&gt;
 &lt;!-- more --&gt;
 &lt;p&gt;要讨论为什么我不再爱好摄影，首先要回想我为什么会爱好摄影。小时候我早早就接触到了相机，还记得第一个接触到的是一台 Olympus 的银色卡片机。后来我常看的报刊杂志中也会介绍很多摄影相关的技巧，一来二去也无师自通了许多理论知识。而在校园里，虽然没有什么使用电子产品的机会，可遇上各种活动，摄影往往是被允许且被鼓励的。凭借我自学到的技巧，出片确实优秀了不少，也收到了不少来自外界的认可。渐渐地正反馈就形成了。&lt;/p&gt;
@@ -3273,7 +3532,7 @@ draw() calls:        |   |   |   |   |   |   |&lt;/code&gt;&lt;span aria-hidden=
 &lt;p class=&quot;metadata&quot;&gt;知道你们好奇是哪棵树，但请不要对我充满强烈个人主观的审美体验抱有过高的期望&lt;/p&gt;
 &lt;br&gt;
 &lt;p&gt;那棵「好树」，大学毕业时我又回去看了它一次，今已亭亭如盖矣。我见证了它这几年的成长，正如同它见证了我的成长一样。褪去了初见时的青涩和稀疏，如今的它更加茂密且翠绿了，它依然是那棵「好树」。&lt;/p&gt;
-&lt;p&gt;它依然是一棵好树。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[4.22.23.06]]></title><link>https://maliut.space/p/4-22-23-06/</link><guid isPermaLink="false">https://maliut.space/p/4-22-23-06/</guid><pubDate>Mon, 22 Apr 2019 23:06:00 GMT</pubDate><content:encoded>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</content:encoded></item><item><title><![CDATA[第三方收发微信消息主流技术小结]]></title><description><![CDATA[一篇水文。最近因为需要去了解了一下如何通过第三方技术收发微信的消息，以至于实现一些更复杂的功能。由于微信实际上并没有开放这方面的 API…]]></description><link>https://maliut.space/p/wechat-crack/</link><guid isPermaLink="false">https://maliut.space/p/wechat-crack/</guid><pubDate>Sun, 03 Mar 2019 21:33:36 GMT</pubDate><content:encoded>&lt;p&gt;一篇水文。最近因为需要去了解了一下如何通过第三方技术收发微信的消息，以至于实现一些更复杂的功能。由于微信实际上并没有开放这方面的 API ，所以通俗来讲，就是研究了下如何破解微信的体系。&lt;/p&gt;
+&lt;p&gt;它依然是一棵好树。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[4.22.23.06]]></title><link>https://maliut.space/p/4-22-23-06/</link><guid isPermaLink="false">https://maliut.space/p/4-22-23-06/</guid><pubDate>Mon, 22 Apr 2019 23:06:00 GMT</pubDate><content:encoded>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</content:encoded></item><item><title><![CDATA[第三方收发微信消息主流技术小结]]></title><description><![CDATA[一篇水文。最近因为需要去了解了一下如何通过第三方技术收发微信的消息，以至于实现一些更复杂的功能。由于微信实际上并没有开放这方面的 API…]]></description><link>https://maliut.space/p/wechat-crack/</link><guid isPermaLink="false">https://maliut.space/p/wechat-crack/</guid><pubDate>Sun, 03 Mar 2019 21:33:36 GMT</pubDate><content:encoded>&lt;p&gt;一篇水文。最近因为需要去了解了一下如何通过第三方技术收发微信的消息，以至于实现一些更复杂的功能。由于微信实际上并没有开放这方面的 API ，所以通俗来讲，就是研究了下如何破解微信的体系。&lt;/p&gt;
 &lt;!--more--&gt;
 &lt;p&gt;大体的思路也比较好理解，就是通过微信的各个端入手来模拟。主流的做法大概有以下几种：&lt;/p&gt;
 &lt;h2&gt;Android 端 Hook&lt;/h2&gt;
