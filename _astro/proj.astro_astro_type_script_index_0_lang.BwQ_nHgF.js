@@ -1,0 +1,1 @@
+import{t as e}from"./masonry.DnjPV5iA.js";var t,n=0;document.addEventListener(`astro:page-load`,()=>{let r=document.querySelector(`[data-project-grid]`);if(!r)return;let i=++n;e(r).then(e=>{i===n?t=e:e()})}),document.addEventListener(`astro:before-swap`,()=>{n++,t?.(),t=void 0});
